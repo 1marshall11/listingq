@@ -1,0 +1,270 @@
+{
+  "sku": "NW-CUT-BMB-01",
+  "packet_hash": "dcb8e48aee5a167c",
+  "generated_by": "claude-code",
+  "fields": {
+    "brand_name": {
+      "value": "Northwind Home",
+      "basis": "extracted",
+      "evidence": [
+        "E061",
+        "E072"
+      ],
+      "note": ""
+    },
+    "item_name": {
+      "value": "Northwind Home Large Bamboo Chopping Board with Juice Groove, Natural",
+      "basis": "composed",
+      "evidence": [
+        "E097",
+        "E098",
+        "E062",
+        "E065"
+      ],
+      "claims": [
+        {
+          "text": "Juice Groove",
+          "evidence": [
+            "E098"
+          ]
+        }
+      ],
+      "note": "left out 'eco friendly' and 'antibacterial' (spec sheet notes, no test or certificate reference)"
+    },
+    "generic_name": {
+      "value": "Chopping Board",
+      "basis": "extracted",
+      "evidence": [
+        "E097"
+      ],
+      "note": ""
+    },
+    "bullet_point1": {
+      "value": "Juice Groove: A groove on one side catches juices while you chop.",
+      "basis": "composed",
+      "evidence": [
+        "E098"
+      ],
+      "claims": [
+        {
+          "text": "juice groove on one side",
+          "evidence": [
+            "E098"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point2": {
+      "value": "Moso Bamboo: Made from moso bamboo with a mineral oil finish.",
+      "basis": "composed",
+      "evidence": [
+        "E098",
+        "E062"
+      ],
+      "claims": [
+        {
+          "text": "moso bamboo with a mineral oil finish",
+          "evidence": [
+            "E098"
+          ]
+        }
+      ],
+      "note": "left out 'food-safe' because the catalogue gives no test or declaration reference"
+    },
+    "bullet_point3": {
+      "value": "Generous Size: Measures 38 x 28 x 1.8 cm and weighs 900 g.",
+      "basis": "composed",
+      "evidence": [
+        "E063",
+        "E064"
+      ],
+      "claims": [
+        {
+          "text": "38 x 28 x 1.8 cm",
+          "evidence": [
+            "E063"
+          ]
+        },
+        {
+          "text": "900 g",
+          "evidence": [
+            "E064"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point4": {
+      "value": "Simple Care: Hand wash and dry upright. Re-oil once a month. Not dishwasher safe.",
+      "basis": "composed",
+      "evidence": [
+        "E099"
+      ],
+      "claims": [
+        {
+          "text": "Not dishwasher safe",
+          "evidence": [
+            "E099"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point5": {
+      "value": "In the Box: 1 large bamboo chopping board in a natural finish.",
+      "basis": "composed",
+      "evidence": [
+        "E066",
+        "E065",
+        "E097"
+      ],
+      "claims": [],
+      "note": ""
+    },
+    "product_description": {
+      "value": "A large bamboo chopping board with a juice groove on one side, made from moso bamboo with a mineral oil finish.\n\nIt measures 38 x 28 x 1.8 cm and weighs 900 g. Hand wash it and dry it upright, re-oil it once a month, and keep it out of the dishwasher: it is not dishwasher safe.",
+      "basis": "composed",
+      "evidence": [
+        "E098",
+        "E063",
+        "E064",
+        "E099"
+      ],
+      "claims": [
+        {
+          "text": "juice groove; moso bamboo with a mineral oil finish",
+          "evidence": [
+            "E098"
+          ]
+        },
+        {
+          "text": "not dishwasher safe",
+          "evidence": [
+            "E099"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_keywords": {
+      "value": "cutting board kitchen board vegetable board wooden board chopping block serving board",
+      "basis": "composed",
+      "evidence": [
+        "E097",
+        "E060"
+      ],
+      "claims": [],
+      "note": ""
+    },
+    "material": {
+      "value": "Bamboo",
+      "basis": "extracted",
+      "evidence": [
+        "E062",
+        "E098"
+      ],
+      "note": ""
+    },
+    "colour": {
+      "value": "Natural",
+      "basis": "extracted",
+      "evidence": [
+        "E065"
+      ],
+      "note": ""
+    },
+    "capacity_ml": {
+      "value": null,
+      "basis": "not_applicable",
+      "evidence": [
+        "E097"
+      ],
+      "note": "a chopping board has no capacity"
+    },
+    "item_dimensions_cm": {
+      "value": "38 x 28 x 1.8",
+      "basis": "extracted",
+      "evidence": [
+        "E063"
+      ],
+      "note": ""
+    },
+    "item_weight_g": {
+      "value": 900,
+      "basis": "extracted",
+      "evidence": [
+        "E064"
+      ],
+      "note": ""
+    },
+    "net_quantity": {
+      "value": "1 N",
+      "basis": "extracted",
+      "evidence": [
+        "E066"
+      ],
+      "note": ""
+    },
+    "country_of_origin": {
+      "value": "India",
+      "basis": "extracted",
+      "evidence": [
+        "E068"
+      ],
+      "note": "Made in India"
+    },
+    "manufacturer_details": {
+      "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+      "basis": "extracted",
+      "evidence": [
+        "E073"
+      ],
+      "note": "the catalogue's company 'Manufactured by' line; the board is made in India"
+    },
+    "importer_details": {
+      "value": null,
+      "basis": "not_applicable",
+      "evidence": [
+        "E068"
+      ],
+      "note": "made in India, not imported"
+    },
+    "mrp_inr": {
+      "value": null,
+      "basis": "not_found",
+      "evidence": [],
+      "note": "the spec sheet says MRP 'TBC' (E067). The MRP must come from the brand."
+    },
+    "consumer_care": {
+      "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+      "basis": "extracted",
+      "evidence": [
+        "E075"
+      ],
+      "note": ""
+    },
+    "care_instructions": {
+      "value": "Hand wash and dry upright. Re-oil once a month. Not dishwasher safe.",
+      "basis": "extracted",
+      "evidence": [
+        "E099"
+      ],
+      "note": ""
+    },
+    "dishwasher_safe": {
+      "value": "No",
+      "basis": "extracted",
+      "evidence": [
+        "E099"
+      ],
+      "note": ""
+    },
+    "hsn_code": {
+      "value": null,
+      "basis": "not_found",
+      "evidence": [],
+      "note": "the spec sheet has no HSN code for this product"
+    }
+  }
+}

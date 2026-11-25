@@ -1,0 +1,294 @@
+{
+  "sku": "NW-JAR-SET4-GLS",
+  "packet_hash": "9dc9426ba97c60de",
+  "generated_by": "claude-code",
+  "fields": {
+    "brand_name": {
+      "value": "Northwind Home",
+      "basis": "extracted",
+      "evidence": [
+        "E049",
+        "E072"
+      ],
+      "note": ""
+    },
+    "item_name": {
+      "value": "Northwind Home Glass Storage Jars with Airtight Bamboo Lids, Set of 4, 1000 ml Each, Clear",
+      "basis": "composed",
+      "evidence": [
+        "E092",
+        "E093",
+        "E051",
+        "E054"
+      ],
+      "claims": [
+        {
+          "text": "Airtight Bamboo Lids",
+          "evidence": [
+            "E093"
+          ]
+        },
+        {
+          "text": "Set of 4, 1000 ml each",
+          "evidence": [
+            "E093",
+            "E051"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_name": {
+      "value": "Storage Jar",
+      "basis": "extracted",
+      "evidence": [
+        "E092"
+      ],
+      "note": ""
+    },
+    "bullet_point1": {
+      "value": "Airtight Fit: Bamboo lids with a silicone seal give each jar an airtight fit.",
+      "basis": "composed",
+      "evidence": [
+        "E093"
+      ],
+      "claims": [
+        {
+          "text": "bamboo lids with a silicone seal for an airtight fit",
+          "evidence": [
+            "E093"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point2": {
+      "value": "Borosilicate Glass: Four clear borosilicate glass jars, 1000 ml each, so you can see what is inside.",
+      "basis": "composed",
+      "evidence": [
+        "E093",
+        "E054"
+      ],
+      "claims": [
+        {
+          "text": "four borosilicate glass jars, 1000 ml each",
+          "evidence": [
+            "E093"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point3": {
+      "value": "Size: Each jar measures 10 x 10 x 18 cm; the set of 4 weighs 2.4 kg.",
+      "basis": "composed",
+      "evidence": [
+        "E052",
+        "E053"
+      ],
+      "claims": [
+        {
+          "text": "10 x 10 x 18 cm each jar",
+          "evidence": [
+            "E052"
+          ]
+        },
+        {
+          "text": "2.4 kg for the set",
+          "evidence": [
+            "E053"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point4": {
+      "value": "Easy Care: The glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth.",
+      "basis": "composed",
+      "evidence": [
+        "E094"
+      ],
+      "claims": [
+        {
+          "text": "glass jars are dishwasher safe",
+          "evidence": [
+            "E094"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point5": {
+      "value": "In the Box: 4 glass jars with bamboo lids. Country of origin: China.",
+      "basis": "composed",
+      "evidence": [
+        "E055",
+        "E093",
+        "E095"
+      ],
+      "claims": [
+        {
+          "text": "country of origin China",
+          "evidence": [
+            "E095"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "product_description": {
+      "value": "A set of four clear borosilicate glass storage jars for the kitchen. Each jar holds 1000 ml and has a bamboo lid with a silicone seal for an airtight fit.\n\nEach jar measures 10 x 10 x 18 cm. The glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth. Country of origin: China.",
+      "basis": "composed",
+      "evidence": [
+        "E093",
+        "E052",
+        "E094",
+        "E095"
+      ],
+      "claims": [
+        {
+          "text": "bamboo lid with a silicone seal for an airtight fit",
+          "evidence": [
+            "E093"
+          ]
+        },
+        {
+          "text": "glass jars are dishwasher safe",
+          "evidence": [
+            "E094"
+          ]
+        },
+        {
+          "text": "10 x 10 x 18 cm",
+          "evidence": [
+            "E052"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_keywords": {
+      "value": "kitchen containers pantry jars canisters spice jars dal storage sugar container tea coffee container",
+      "basis": "composed",
+      "evidence": [
+        "E092",
+        "E048"
+      ],
+      "claims": [],
+      "note": ""
+    },
+    "material": {
+      "value": "Glass",
+      "basis": "extracted",
+      "evidence": [
+        "E050",
+        "E093"
+      ],
+      "note": "borosilicate glass"
+    },
+    "colour": {
+      "value": "Clear",
+      "basis": "extracted",
+      "evidence": [
+        "E054"
+      ],
+      "note": ""
+    },
+    "capacity_ml": {
+      "value": 1000,
+      "basis": "extracted",
+      "evidence": [
+        "E051",
+        "E093"
+      ],
+      "note": "per jar"
+    },
+    "item_dimensions_cm": {
+      "value": "10 x 10 x 18",
+      "basis": "extracted",
+      "evidence": [
+        "E052"
+      ],
+      "note": "each jar"
+    },
+    "item_weight_g": {
+      "value": 2400,
+      "basis": "converted",
+      "evidence": [
+        "E053"
+      ],
+      "note": "2.4 kg = 2400 g, whole set"
+    },
+    "net_quantity": {
+      "value": "4 N",
+      "basis": "extracted",
+      "evidence": [
+        "E055"
+      ],
+      "note": ""
+    },
+    "country_of_origin": {
+      "value": "China",
+      "basis": "extracted",
+      "evidence": [
+        "E057",
+        "E095"
+      ],
+      "note": ""
+    },
+    "manufacturer_details": {
+      "value": null,
+      "basis": "not_found",
+      "evidence": [],
+      "note": "The only 'Manufactured by' line (E073) names an Indian steel maker. These jars are made in China and the foreign manufacturer is not stated. Ask the supplier."
+    },
+    "importer_details": {
+      "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, India",
+      "basis": "extracted",
+      "evidence": [
+        "E096"
+      ],
+      "note": ""
+    },
+    "mrp_inr": {
+      "value": 1499,
+      "basis": "extracted",
+      "evidence": [
+        "E056"
+      ],
+      "note": ""
+    },
+    "consumer_care": {
+      "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+      "basis": "extracted",
+      "evidence": [
+        "E075"
+      ],
+      "note": ""
+    },
+    "care_instructions": {
+      "value": "Glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth.",
+      "basis": "extracted",
+      "evidence": [
+        "E094"
+      ],
+      "note": ""
+    },
+    "dishwasher_safe": {
+      "value": "Yes",
+      "basis": "extracted",
+      "evidence": [
+        "E094"
+      ],
+      "note": "glass jars only; wipe the lids by hand"
+    },
+    "hsn_code": {
+      "value": "7013",
+      "basis": "extracted",
+      "evidence": [
+        "E058"
+      ],
+      "note": ""
+    }
+  }
+}

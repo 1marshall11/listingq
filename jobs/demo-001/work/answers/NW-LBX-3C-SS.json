@@ -1,0 +1,288 @@
+{
+  "sku": "NW-LBX-3C-SS",
+  "packet_hash": "12ab6d7247aada5f",
+  "generated_by": "claude-code",
+  "fields": {
+    "brand_name": {
+      "value": "Northwind Home",
+      "basis": "extracted",
+      "evidence": [
+        "E037",
+        "E072"
+      ],
+      "note": ""
+    },
+    "item_name": {
+      "value": "Northwind Home Three-Compartment Lunch Box with BPA-Free Gasket, 1200 ml, Stainless Steel, Silver",
+      "basis": "composed",
+      "evidence": [
+        "E089",
+        "E090",
+        "E039",
+        "E038",
+        "E042"
+      ],
+      "claims": [
+        {
+          "text": "BPA-Free Gasket",
+          "evidence": [
+            "E090"
+          ]
+        },
+        {
+          "text": "1200 ml",
+          "evidence": [
+            "E039",
+            "E090"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_name": {
+      "value": "Lunch Box",
+      "basis": "extracted",
+      "evidence": [
+        "E089"
+      ],
+      "note": ""
+    },
+    "bullet_point1": {
+      "value": "Three Compartments: Three 400 ml sections, 1200 ml in total, keep different foods apart.",
+      "basis": "composed",
+      "evidence": [
+        "E090"
+      ],
+      "claims": [
+        {
+          "text": "three compartments of 400 ml each, 1200 ml total",
+          "evidence": [
+            "E090"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point2": {
+      "value": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+      "basis": "composed",
+      "evidence": [
+        "E078",
+        "E038"
+      ],
+      "claims": [
+        {
+          "text": "food-grade 18/8 (SS 304) stainless steel",
+          "evidence": [
+            "E078"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point3": {
+      "value": "BPA-Free Gasket: The silicone gasket is BPA-free, as per supplier declaration SD-118.",
+      "basis": "composed",
+      "evidence": [
+        "E090",
+        "E047"
+      ],
+      "claims": [
+        {
+          "text": "silicone gasket is BPA-free",
+          "evidence": [
+            "E090"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point4": {
+      "value": "Easy Care: The container is dishwasher safe. Remove the gasket and wash it by hand.",
+      "basis": "composed",
+      "evidence": [
+        "E091"
+      ],
+      "claims": [
+        {
+          "text": "container is dishwasher safe",
+          "evidence": [
+            "E091"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point5": {
+      "value": "Please Note: Not suitable for microwave use. In the box: 1 lunch box.",
+      "basis": "composed",
+      "evidence": [
+        "E091",
+        "E043"
+      ],
+      "claims": [
+        {
+          "text": "Not suitable for microwave use",
+          "evidence": [
+            "E091"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "product_description": {
+      "value": "A three-compartment stainless steel lunch box for packed meals. Three 400 ml sections, 1200 ml in total, keep different foods apart, and the silicone gasket is BPA-free (supplier declaration SD-118).\n\nThe box is made from 18/8 (SS 304) food-grade stainless steel (MD-304-2026). The container is dishwasher safe; remove the gasket and wash it by hand. Not suitable for microwave use.",
+      "basis": "composed",
+      "evidence": [
+        "E090",
+        "E078",
+        "E091"
+      ],
+      "claims": [
+        {
+          "text": "three 400 ml sections, 1200 ml total; gasket is BPA-free",
+          "evidence": [
+            "E090"
+          ]
+        },
+        {
+          "text": "food-grade 18/8 (SS 304) stainless steel",
+          "evidence": [
+            "E078"
+          ]
+        },
+        {
+          "text": "container is dishwasher safe; not suitable for microwave use",
+          "evidence": [
+            "E091"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_keywords": {
+      "value": "tiffin box steel tiffin office lunch school lunch meal box food container divided tiffin",
+      "basis": "composed",
+      "evidence": [
+        "E089",
+        "E036"
+      ],
+      "claims": [],
+      "note": ""
+    },
+    "material": {
+      "value": "Stainless Steel",
+      "basis": "extracted",
+      "evidence": [
+        "E038",
+        "E078"
+      ],
+      "note": "SS 304 = stainless steel"
+    },
+    "colour": {
+      "value": "Silver",
+      "basis": "extracted",
+      "evidence": [
+        "E042"
+      ],
+      "note": ""
+    },
+    "capacity_ml": {
+      "value": 1200,
+      "basis": "extracted",
+      "evidence": [
+        "E039",
+        "E090"
+      ],
+      "note": "total of three 400 ml compartments"
+    },
+    "item_dimensions_cm": {
+      "value": "21 x 15 x 7",
+      "basis": "extracted",
+      "evidence": [
+        "E040"
+      ],
+      "note": ""
+    },
+    "item_weight_g": {
+      "value": 520,
+      "basis": "extracted",
+      "evidence": [
+        "E041"
+      ],
+      "note": ""
+    },
+    "net_quantity": {
+      "value": "1 N",
+      "basis": "extracted",
+      "evidence": [
+        "E043"
+      ],
+      "note": ""
+    },
+    "country_of_origin": {
+      "value": "India",
+      "basis": "extracted",
+      "evidence": [
+        "E045"
+      ],
+      "note": "Made in India"
+    },
+    "manufacturer_details": {
+      "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+      "basis": "extracted",
+      "evidence": [
+        "E073"
+      ],
+      "note": ""
+    },
+    "importer_details": {
+      "value": null,
+      "basis": "not_applicable",
+      "evidence": [
+        "E045"
+      ],
+      "note": "made in India, not imported"
+    },
+    "mrp_inr": {
+      "value": 1299,
+      "basis": "extracted",
+      "evidence": [
+        "E044"
+      ],
+      "note": ""
+    },
+    "consumer_care": {
+      "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+      "basis": "extracted",
+      "evidence": [
+        "E075"
+      ],
+      "note": ""
+    },
+    "care_instructions": {
+      "value": "Not suitable for microwave use. The container is dishwasher safe; remove the gasket and wash it by hand.",
+      "basis": "extracted",
+      "evidence": [
+        "E091"
+      ],
+      "note": ""
+    },
+    "dishwasher_safe": {
+      "value": "Yes",
+      "basis": "extracted",
+      "evidence": [
+        "E091"
+      ],
+      "note": "container only; wash the gasket by hand"
+    },
+    "hsn_code": {
+      "value": "7323",
+      "basis": "extracted",
+      "evidence": [
+        "E046"
+      ],
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "job_id": "demo-001",
+  "sku": "NW-JAR-SET4-GLS",
+  "answer_file": "jobs/demo-001/work/answers/NW-JAR-SET4-GLS.json",
+  "brand_guide": "kb/brand_guide.md",
+  "fields": [
+    {
+      "key": "item_name",
+      "label": "Product Name (Title)",
+      "kind": "copy",
+      "required": true,
+      "rules": {
+        "max_chars": 150,
+        "banned_chars": [
+          "!",
+          "$",
+          "?",
+          "_",
+          "{",
+          "}",
+          "^",
+          "¬",
+          "¦"
+        ],
+        "max_word_repeats": 2,
+        "repeat_exempt_words": [
+          "a",
+          "an",
+          "the",
+          "and",
+          "or",
+          "but",
+          "for",
+          "nor",
+          "so",
+          "yet",
+          "with",
+          "of",
+          "in",
+          true,
+          "at",
+          "to",
+          "by",
+          "from",
+          "as",
+          "into",
+          "per"
+        ]
+      },
+      "hint": "Brand + Product type + Key feature, Capacity or size, Material, Colour (brand guide)."
+    },
+    {
+      "key": "brand_name",
+      "label": "Brand Name",
+      "kind": "fact",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "generic_name",
+      "label": "Common or Generic Name",
+      "kind": "fact",
+      "type": "text",
+      "required": true,
+      "critical": true,
+      "hint": "The plain product name from the supplier documents, e.g. 'Water Bottle'.",
+      "law": "LM(PC) Rules 2011 r.6(1)(b)"
+    },
+    {
+      "key": "bullet_point1",
+      "label": "Bullet Point 1",
+      "kind": "copy",
+      "required": true,
+      "rules": {
+        "max_chars": 200,
+        "min_chars": 40
+      }
+    },
+    {
+      "key": "bullet_point2",
+      "label": "Bullet Point 2",
+      "kind": "copy",
+      "required": true,
+      "rules": {
+        "max_chars": 200,
+        "min_chars": 40
+      }
+    },
+    {
+      "key": "bullet_point3",
+      "label": "Bullet Point 3",
+      "kind": "copy",
+      "required": true,
+      "rules": {
+        "max_chars": 200,
+        "min_chars": 40
+      }
+    },
+    {
+      "key": "bullet_point4",
+      "label": "Bullet Point 4",
+      "kind": "copy",
+      "required": false,
+      "rules": {
+        "max_chars": 200,
+        "min_chars": 40
+      }
+    },
+    {
+      "key": "bullet_point5",
+      "label": "Bullet Point 5",
+      "kind": "copy",
+      "required": false,
+      "rules": {
+        "max_chars": 200,
+        "min_chars": 40
+      }
+    },
+    {
+      "key": "product_description",
+      "label": "Product Description",
+      "kind": "copy",
+      "required": true,
+      "rules": {
+        "max_chars": 1000,
+        "min_chars": 150
+      }
+    },
+    {
+      "key": "generic_keywords",
+      "label": "Search Terms",
+      "kind": "copy",
+      "required": false,
+      "rules": {
+        "max_bytes": 250,
+        "lowercase": true,
+        "no_commas": true,
+        "no_brand_names": true
+      },
+      "hint": "Lower case, space separated, no commas, no brand names, no claims."
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "kind": "fact",
+      "type": "enum",
+      "required": true,
+      "allowed": [
+        "Stainless Steel",
+        "Glass",
+        "Bamboo",
+        "Ceramic",
+        "Plastic",
+        "Silicone"
+      ]
+    },
+    {
+      "key": "colour",
+      "label": "Colour",
+      "kind": "fact",
+      "type": "enum",
+      "required": true,
+      "allowed": [
+        "Black",
+        "Blue",
+        "Pink",
+        "Green",
+        "Silver",
+        "White",
+        "Clear",
+        "Natural",
+        "Multicolour"
+      ]
+    },
+    {
+      "key": "capacity_ml",
+      "label": "Capacity (ml)",
+      "kind": "fact",
+      "type": "number",
+      "quantity": "volume_ml",
+      "required": false,
+      "allow_na": true,
+      "conflict_check": "volume_ml"
+    },
+    {
+      "key": "item_dimensions_cm",
+      "label": "Item Dimensions L x W x H (cm)",
+      "kind": "fact",
+      "type": "dims",
+      "required": true,
+      "rules": {
+        "pattern": "\\d+(\\.\\d+)? x \\d+(\\.\\d+)? x \\d+(\\.\\d+)?"
+      },
+      "law": "LM(PC) Rules 2011 r.6(1)(f), where relevant"
+    },
+    {
+      "key": "item_weight_g",
+      "label": "Item Weight (g)",
+      "kind": "fact",
+      "type": "number",
+      "quantity": "weight_g",
+      "required": true,
+      "conflict_check": "weight_g"
+    },
+    {
+      "key": "net_quantity",
+      "label": "Net Quantity",
+      "kind": "fact",
+      "type": "text",
+      "required": true,
+      "critical": true,
+      "hint": "Exactly as the supplier states it, e.g. '1 N'.",
+      "law": "LM(PC) Rules 2011 r.6(1)(c)"
+    },
+    {
+      "key": "country_of_origin",
+      "label": "Country of Origin",
+      "kind": "fact",
+      "type": "enum",
+      "required": true,
+      "critical": true,
+      "allowed": [
+        "India",
+        "China",
+        "Vietnam",
+        "Thailand",
+        "Bangladesh",
+        "Indonesia",
+        "Turkey",
+        "Germany",
+        "Italy",
+        "United States"
+      ],
+      "law": "LM(PC) Rules 2011 r.6(1)(aa); CP(E-Commerce) Rules 2020 r.6(5)(d)"
+    },
+    {
+      "key": "manufacturer_details",
+      "label": "Manufacturer Name and Address",
+      "kind": "fact",
+      "type": "text",
+      "required": true,
+      "critical": true,
+      "law": "LM(PC) Rules 2011 r.6(1)(a)"
+    },
+    {
+      "key": "importer_details",
+      "label": "Importer Name and Address",
+      "kind": "fact",
+      "type": "text",
+      "required_if": {
+        "field": "country_of_origin",
+        "not_in": [
+          "India"
+        ]
+      },
+      "critical": true,
+      "allow_na": true,
+      "law": "LM(PC) Rules 2011 r.6(1)(a), imported packages"
+    },
+    {
+      "key": "mrp_inr",
+      "label": "Maximum Retail Price (INR)",
+      "kind": "fact",
+      "type": "number",
+      "quantity": "money_inr",
+      "required": true,
+      "critical": true,
+      "conflict_check": "money_inr",
+      "law": "LM(PC) Rules 2011 r.6(1)(e)"
+    },
+    {
+      "key": "consumer_care",
+      "label": "Consumer Care Details",
+      "kind": "fact",
+      "type": "text",
+      "required": true,
+      "law": "LM(PC) Rules 2011 r.6(2)"
+    },
+    {
+      "key": "care_instructions",
+      "label": "Care Instructions",
+      "kind": "fact",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "dishwasher_safe",
+      "label": "Dishwasher Safe",
+      "kind": "fact",
+      "type": "enum",
+      "required": false,
+      "allowed": [
+        "Yes",
+        "No"
+      ],
+      "contradiction_check": true
+    },
+    {
+      "key": "hsn_code",
+      "label": "HSN Code",
+      "kind": "fact",
+      "type": "code",
+      "required": false,
+      "rules": {
+        "pattern": "\\d{4}(\\d{2}){0,2}"
+      },
+      "hint": "Only if the supplier states it. Never work it out yourself."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E048",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C2 (Description)",
+      "text": "Description: Glass jar set of 4 bamboo lid"
+    },
+    {
+      "id": "E049",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C3 (Brand)",
+      "text": "Brand: Northwind Home"
+    },
+    {
+      "id": "E050",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C4 (Matl)",
+      "text": "Matl: Borosilicate glass"
+    },
+    {
+      "id": "E051",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C5 (Cap)",
+      "text": "Cap: 1000 ml each"
+    },
+    {
+      "id": "E052",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C6 (Dim (cm))",
+      "text": "Dim (cm): 10 x 10 x 18 (each jar)"
+    },
+    {
+      "id": "E053",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C7 (Wt)",
+      "text": "Wt: 2.4 kg (set)"
+    },
+    {
+      "id": "E054",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C8 (Colour)",
+      "text": "Colour: Clear"
+    },
+    {
+      "id": "E055",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C9 (Pack)",
+      "text": "Pack: 4 N"
+    },
+    {
+      "id": "E056",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C10 (MRP (Rs))",
+      "text": "MRP (Rs): 1,499"
+    },
+    {
+      "id": "E057",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C11 (Origin)",
+      "text": "Origin: China"
+    },
+    {
+      "id": "E058",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C12 (HSN)",
+      "text": "HSN: 7013"
+    },
+    {
+      "id": "E059",
+      "scope": "SKU",
+      "source": "supplier_specs.xlsx > Specs!R8C13 (Notes)",
+      "text": "Notes: imported"
+    },
+    {
+      "id": "E070",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 1",
+      "text": "Northwind Home Spring Range Product Catalogue Prepared by Demo Metalworks Pvt. Ltd. for Northwind Home. Fictional demo data."
+    },
+    {
+      "id": "E071",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 2",
+      "text": "Company information"
+    },
+    {
+      "id": "E072",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 3",
+      "text": "Brand: Northwind Home"
+    },
+    {
+      "id": "E073",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 4",
+      "text": "Manufactured by: Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India"
+    },
+    {
+      "id": "E074",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 5",
+      "text": "Marketed by: Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, India"
+    },
+    {
+      "id": "E075",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 6",
+      "text": "Consumer care: Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000"
+    },
+    {
+      "id": "E076",
+      "scope": "GLOBAL",
+      "source": "supplier_catalogue.pdf > p.1 line 7",
+      "text": "General: net quantity, weight and MRP for each item are given in the supplier spec sheet."
+    },
+    {
+      "id": "E092",
+      "scope": "SKU",
+      "source": "supplier_catalogue.pdf > p.2 line 10",
+      "text": "NW-JAR-SET4-GLS - Glass Storage Jars, Set of 4"
+    },
+    {
+      "id": "E093",
+      "scope": "SKU",
+      "source": "supplier_catalogue.pdf > p.2 line 11",
+      "text": "Four borosilicate glass jars, 1000 ml each, with bamboo lids and a silicone seal for an airtight fit."
+    },
+    {
+      "id": "E094",
+      "scope": "SKU",
+      "source": "supplier_catalogue.pdf > p.2 line 12",
+      "text": "Glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth."
+    },
+    {
+      "id": "E095",
+      "scope": "SKU",
+      "source": "supplier_catalogue.pdf > p.2 line 13",
+      "text": "Country of origin: China."
+    },
+    {
+      "id": "E096",
+      "scope": "SKU",
+      "source": "supplier_catalogue.pdf > p.2 line 14",
+      "text": "Imported by: Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, India"
+    }
+  ],
+  "conflicts": [],
+  "has_product_evidence": true,
+  "examples": [
+    {
+      "sku": "NW-TMB-350-SLV",
+      "job_id": "job-2026-10",
+      "approved_at": "2026-10-14",
+      "approved_by": "brand team (seed example)",
+      "item_name": "Northwind Home Insulated Travel Tumbler with Slide Lid, 350 ml, Stainless Steel, Silver",
+      "bullet_point1": "Hot for 6 Hours: Double-wall vacuum insulation keeps tea and coffee hot for up to 6 hours, as tested by the supplier (LT-2104).",
+      "bullet_point2": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+      "bullet_point3": "Fits Your Commute: A slim 350 ml body slides into most car cup holders and bag pockets.",
+      "bullet_point4": "Easy Care: Hand wash with warm soapy water. Not dishwasher safe.",
+      "bullet_point5": "In the Box: 1 tumbler with slide lid.",
+      "product_description": "A slim, double-walled travel tumbler for the morning commute. It keeps tea and coffee hot for up to 6 hours, so the last sip is as good as the first.\n\nThe body is 18/8 food-grade stainless steel with a slide lid. Hand wash with warm soapy water and dry with the lid off.",
+      "generic_keywords": "travel mug coffee cup tea flask office commute car cup holder"
+    }
+  ],
+  "packet_hash": "9dc9426ba97c60de",
+  "answer_skeleton": {
+    "sku": "NW-JAR-SET4-GLS",
+    "packet_hash": "9dc9426ba97c60de",
+    "generated_by": "claude-code",
+    "fields": {
+      "item_name": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "brand_name": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "generic_name": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "bullet_point1": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "bullet_point2": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "bullet_point3": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "bullet_point4": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "bullet_point5": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "product_description": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "generic_keywords": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": "",
+        "claims": []
+      },
+      "material": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "colour": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "capacity_ml": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "item_dimensions_cm": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "item_weight_g": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "net_quantity": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "country_of_origin": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "manufacturer_details": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "importer_details": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "mrp_inr": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "consumer_care": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "care_instructions": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "dishwasher_safe": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      },
+      "hsn_code": {
+        "value": null,
+        "basis": "",
+        "evidence": [],
+        "note": ""
+      }
+    }
+  }
+}

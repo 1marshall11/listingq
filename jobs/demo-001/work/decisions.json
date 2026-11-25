@@ -1,0 +1,19 @@
+{
+  "job_id": "demo-001",
+  "applied_at": "2026-11-23T18:49:42+00:00",
+  "reviewer": "Demo reviewer (simulated)",
+  "decisions": [
+    {
+      "sku": "NW-BTL-500-PNK",
+      "key": "capacity_ml",
+      "decision": "REJECT",
+      "reviewer": "Demo reviewer (simulated)",
+      "reviewed_at": "2026-11-23T18:49:42+00:00",
+      "answer_snapshot_hash": "1182bebaae0fa711",
+      "proposed_value": 500,
+      "note": "Spec sheet says 500 ml, catalogue says 550 ml. Leave blank and ask the supplier to confirm."
+    }
+  ],
+  "problems": [],
+  "decisions_hash": "5edc3c21273ae4ae"
+}

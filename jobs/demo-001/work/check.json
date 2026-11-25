@@ -1,0 +1,3584 @@
+{
+  "job_id": "demo-001",
+  "profile_id": "amazon_in_home_kitchen",
+  "run_no": 2,
+  "checked_at": "2026-11-23T18:55:06+00:00",
+  "totals": {
+    "AUTO_APPROVED": 133,
+    "NOT_APPLICABLE": 6,
+    "NEEDS_REVIEW": 1,
+    "NOT_FOUND": 4
+  },
+  "ai_fixable": 0,
+  "skus": {
+    "NW-BTL-750-BLK": {
+      "sku": "NW-BTL-750-BLK",
+      "packet_hash": "a3479d587dc187db",
+      "issues": [],
+      "counts": {
+        "AUTO_APPROVED": 23,
+        "NOT_APPLICABLE": 1
+      },
+      "ready_without_review": true,
+      "blocking_fields": [],
+      "fields": {
+        "item_name": {
+          "key": "item_name",
+          "label": "Product Name (Title)",
+          "value": "Northwind Home Insulated Water Bottle with Leak-Proof Lid, 750 ml, Stainless Steel, Black",
+          "basis": "composed",
+          "evidence": [
+            "E083",
+            "E080",
+            "E081",
+            "E004",
+            "E003",
+            "E007"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "eb011a70415f2d3a",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "brand_name": {
+          "key": "brand_name",
+          "label": "Brand Name",
+          "value": "Northwind Home",
+          "basis": "extracted",
+          "evidence": [
+            "E002",
+            "E072"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7bacb44b54f34b6c",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_name": {
+          "key": "generic_name",
+          "label": "Common or Generic Name",
+          "value": "Water Bottle",
+          "basis": "extracted",
+          "evidence": [
+            "E083"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "b9140ad9182da0f9",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point1": {
+          "key": "bullet_point1",
+          "label": "Bullet Point 1",
+          "value": "Cold for 24 Hours: Double-wall vacuum insulation keeps drinks cold for up to 24 hours and hot for up to 12 hours, as tested by the supplier (LT-2291).",
+          "basis": "composed",
+          "evidence": [
+            "E080"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7496187dc10c1b13",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point2": {
+          "key": "bullet_point2",
+          "label": "Bullet Point 2",
+          "value": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+          "basis": "composed",
+          "evidence": [
+            "E078",
+            "E003"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "05054260d0f313e7",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point3": {
+          "key": "bullet_point3",
+          "label": "Bullet Point 3",
+          "value": "Leak-Proof and Car-Friendly: The 750 ml bottle has a screw lid that passed a 24-hour inverted leak test (QC-221) and fits most car cup holders.",
+          "basis": "composed",
+          "evidence": [
+            "E081",
+            "E084",
+            "E004"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "c73377432dd689d1",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point4": {
+          "key": "bullet_point4",
+          "label": "Bullet Point 4",
+          "value": "Easy Care: Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+          "basis": "composed",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "9a48b6f472efbb96",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point5": {
+          "key": "bullet_point5",
+          "label": "Bullet Point 5",
+          "value": "In the Box: 1 water bottle with screw lid, in a matte black powder-coated finish.",
+          "basis": "composed",
+          "evidence": [
+            "E008",
+            "E084",
+            "E081"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "b6eac051599b4ca6",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "product_description": {
+          "key": "product_description",
+          "label": "Product Description",
+          "value": "A double-wall insulated water bottle for long days out. In the supplier's lab test (LT-2291) it keeps drinks cold for up to 24 hours and hot for up to 12 hours, and its screw lid passed a 24-hour inverted leak test (QC-221).\n\nThe 750 ml body is made from 18/8 (SS 304) food-grade stainless steel (MD-304-2026) with a matte black powder-coated finish, and it fits most car cup holders. Hand wash only with warm soapy water; it is not dishwasher safe. Do not freeze.",
+          "basis": "composed",
+          "evidence": [
+            "E080",
+            "E081",
+            "E078",
+            "E084",
+            "E082",
+            "E004"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "705cadb908a60e66",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_keywords": {
+          "key": "generic_keywords",
+          "label": "Search Terms",
+          "value": "flask sipper drinkware hydration gym office travel commute cup holder thermal cold hot beverage",
+          "basis": "composed",
+          "evidence": [
+            "E083",
+            "E084"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "c70ce79dfa536f14",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "material": {
+          "key": "material",
+          "label": "Material",
+          "value": "Stainless Steel",
+          "basis": "extracted",
+          "evidence": [
+            "E003",
+            "E078"
+          ],
+          "note": "SS 304 = stainless steel",
+          "required": true,
+          "critical": false,
+          "answer_hash": "2d8eed5ee25a043a",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "colour": {
+          "key": "colour",
+          "label": "Colour",
+          "value": "Black",
+          "basis": "extracted",
+          "evidence": [
+            "E007",
+            "E084"
+          ],
+          "note": "Blk = Black",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7cd54d0717ed4999",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "capacity_ml": {
+          "key": "capacity_ml",
+          "label": "Capacity (ml)",
+          "value": 750,
+          "basis": "extracted",
+          "evidence": [
+            "E004",
+            "E084"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "07f85deedd7f6219",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_dimensions_cm": {
+          "key": "item_dimensions_cm",
+          "label": "Item Dimensions L x W x H (cm)",
+          "value": "7.5 x 7.5 x 26.5",
+          "basis": "extracted",
+          "evidence": [
+            "E005"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "9a322804aa33fac4",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_weight_g": {
+          "key": "item_weight_g",
+          "label": "Item Weight (g)",
+          "value": 340,
+          "basis": "extracted",
+          "evidence": [
+            "E006"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "c63a5276d1b2e4d1",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "net_quantity": {
+          "key": "net_quantity",
+          "label": "Net Quantity",
+          "value": "1 N",
+          "basis": "extracted",
+          "evidence": [
+            "E008"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "fa95521146125977",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "country_of_origin": {
+          "key": "country_of_origin",
+          "label": "Country of Origin",
+          "value": "India",
+          "basis": "extracted",
+          "evidence": [
+            "E010"
+          ],
+          "note": "Made in India",
+          "required": true,
+          "critical": true,
+          "answer_hash": "a5518152fa3a15ab",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "manufacturer_details": {
+          "key": "manufacturer_details",
+          "label": "Manufacturer Name and Address",
+          "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+          "basis": "extracted",
+          "evidence": [
+            "E073"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0560c3d3e472bd78",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "importer_details": {
+          "key": "importer_details",
+          "label": "Importer Name and Address",
+          "value": null,
+          "basis": "not_applicable",
+          "evidence": [
+            "E010"
+          ],
+          "note": "made in India, not imported",
+          "required": false,
+          "critical": true,
+          "answer_hash": "17437b46115b29dd",
+          "status": "NOT_APPLICABLE",
+          "score": 1.0,
+          "signals": {},
+          "issues": []
+        },
+        "mrp_inr": {
+          "key": "mrp_inr",
+          "label": "Maximum Retail Price (INR)",
+          "value": 899,
+          "basis": "extracted",
+          "evidence": [
+            "E009"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "544a1e39d6c1ac1f",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "consumer_care": {
+          "key": "consumer_care",
+          "label": "Consumer Care Details",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+          "basis": "extracted",
+          "evidence": [
+            "E075"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "483efeeb9349d739",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "care_instructions": {
+          "key": "care_instructions",
+          "label": "Care Instructions",
+          "value": "Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+          "basis": "extracted",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "ba9c9b74e271e6eb",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "dishwasher_safe": {
+          "key": "dishwasher_safe",
+          "label": "Dishwasher Safe",
+          "value": "No",
+          "basis": "extracted",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "5936b6147ec4ad60",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "hsn_code": {
+          "key": "hsn_code",
+          "label": "HSN Code",
+          "value": "7323",
+          "basis": "extracted",
+          "evidence": [
+            "E011"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "0d06c75f6a410294",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        }
+      }
+    },
+    "NW-BTL-1000-BLU": {
+      "sku": "NW-BTL-1000-BLU",
+      "packet_hash": "99d87937baf9db63",
+      "issues": [],
+      "counts": {
+        "AUTO_APPROVED": 23,
+        "NOT_APPLICABLE": 1
+      },
+      "ready_without_review": true,
+      "blocking_fields": [],
+      "fields": {
+        "item_name": {
+          "key": "item_name",
+          "label": "Product Name (Title)",
+          "value": "Northwind Home Insulated Water Bottle with Leak-Proof Lid, 1000 ml, Stainless Steel, Blue",
+          "basis": "composed",
+          "evidence": [
+            "E085",
+            "E080",
+            "E081",
+            "E086",
+            "E015",
+            "E019"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "3912b3929ddb1490",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "brand_name": {
+          "key": "brand_name",
+          "label": "Brand Name",
+          "value": "Northwind Home",
+          "basis": "extracted",
+          "evidence": [
+            "E014",
+            "E072"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "e65129b530f4fca0",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_name": {
+          "key": "generic_name",
+          "label": "Common or Generic Name",
+          "value": "Water Bottle",
+          "basis": "extracted",
+          "evidence": [
+            "E085"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "be6d51768ef5542b",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point1": {
+          "key": "bullet_point1",
+          "label": "Bullet Point 1",
+          "value": "Cold for 24 Hours: Double-wall vacuum insulation keeps drinks cold for up to 24 hours and hot for up to 12 hours, as tested by the supplier (LT-2291).",
+          "basis": "composed",
+          "evidence": [
+            "E080"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7496187dc10c1b13",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point2": {
+          "key": "bullet_point2",
+          "label": "Bullet Point 2",
+          "value": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+          "basis": "composed",
+          "evidence": [
+            "E078",
+            "E015"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "13feb7416e097dab",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point3": {
+          "key": "bullet_point3",
+          "label": "Bullet Point 3",
+          "value": "Big Capacity, Easy Carry: Holds 1000 ml, with a carry loop on the lid and a screw lid that passed a 24-hour inverted leak test (QC-221).",
+          "basis": "composed",
+          "evidence": [
+            "E086",
+            "E081"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "0a91feb6e92070da",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point4": {
+          "key": "bullet_point4",
+          "label": "Bullet Point 4",
+          "value": "Easy Care: Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+          "basis": "composed",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "9a48b6f472efbb96",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point5": {
+          "key": "bullet_point5",
+          "label": "Bullet Point 5",
+          "value": "In the Box: 1 water bottle with screw lid, in an ocean blue powder-coated finish.",
+          "basis": "composed",
+          "evidence": [
+            "E020",
+            "E086"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "11d5602896253997",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "product_description": {
+          "key": "product_description",
+          "label": "Product Description",
+          "value": "A large double-wall insulated water bottle for long days out. In the supplier's lab test (LT-2291) it keeps drinks cold for up to 24 hours and hot for up to 12 hours, and its screw lid passed a 24-hour inverted leak test (QC-221).\n\nThe 1000 ml body is made from 18/8 (SS 304) food-grade stainless steel (MD-304-2026) with an ocean blue powder-coated finish and a carry loop on the lid. Hand wash only with warm soapy water; it is not dishwasher safe. Do not freeze.",
+          "basis": "composed",
+          "evidence": [
+            "E080",
+            "E081",
+            "E078",
+            "E086",
+            "E082"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "0f26764998cba6cf",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_keywords": {
+          "key": "generic_keywords",
+          "label": "Search Terms",
+          "value": "flask sipper drinkware hydration gym office travel trekking big bottle litre cold hot beverage",
+          "basis": "composed",
+          "evidence": [
+            "E085",
+            "E086"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "e0df29e18675dd82",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "material": {
+          "key": "material",
+          "label": "Material",
+          "value": "Stainless Steel",
+          "basis": "extracted",
+          "evidence": [
+            "E015",
+            "E078"
+          ],
+          "note": "SS 304 = stainless steel",
+          "required": true,
+          "critical": false,
+          "answer_hash": "b255721dea7928e8",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "colour": {
+          "key": "colour",
+          "label": "Colour",
+          "value": "Blue",
+          "basis": "extracted",
+          "evidence": [
+            "E019",
+            "E086"
+          ],
+          "note": "Blu / ocean blue = Blue",
+          "required": true,
+          "critical": false,
+          "answer_hash": "174c0f6e92bcce96",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "capacity_ml": {
+          "key": "capacity_ml",
+          "label": "Capacity (ml)",
+          "value": 1000,
+          "basis": "extracted",
+          "evidence": [
+            "E086",
+            "E016"
+          ],
+          "note": "catalogue 1000 ml; spec sheet 1 ltr",
+          "required": false,
+          "critical": false,
+          "answer_hash": "6fa4a1310e94ecb9",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_dimensions_cm": {
+          "key": "item_dimensions_cm",
+          "label": "Item Dimensions L x W x H (cm)",
+          "value": "8.5 x 8.5 x 29",
+          "basis": "extracted",
+          "evidence": [
+            "E017"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "38fc32d21c0981a9",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_weight_g": {
+          "key": "item_weight_g",
+          "label": "Item Weight (g)",
+          "value": 410,
+          "basis": "converted",
+          "evidence": [
+            "E018"
+          ],
+          "note": "0.41 kg = 410 g",
+          "required": true,
+          "critical": false,
+          "answer_hash": "f49d3ccc4bba5817",
+          "status": "AUTO_APPROVED",
+          "score": 0.99,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.9
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "net_quantity": {
+          "key": "net_quantity",
+          "label": "Net Quantity",
+          "value": "1 N",
+          "basis": "extracted",
+          "evidence": [
+            "E020"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "ad8641bf9172e8f6",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "country_of_origin": {
+          "key": "country_of_origin",
+          "label": "Country of Origin",
+          "value": "India",
+          "basis": "extracted",
+          "evidence": [
+            "E022"
+          ],
+          "note": "Made in India",
+          "required": true,
+          "critical": true,
+          "answer_hash": "2c7c70acd88d504d",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "manufacturer_details": {
+          "key": "manufacturer_details",
+          "label": "Manufacturer Name and Address",
+          "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+          "basis": "extracted",
+          "evidence": [
+            "E073"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0560c3d3e472bd78",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "importer_details": {
+          "key": "importer_details",
+          "label": "Importer Name and Address",
+          "value": null,
+          "basis": "not_applicable",
+          "evidence": [
+            "E022"
+          ],
+          "note": "made in India, not imported",
+          "required": false,
+          "critical": true,
+          "answer_hash": "ba4d84e13120fdcc",
+          "status": "NOT_APPLICABLE",
+          "score": 1.0,
+          "signals": {},
+          "issues": []
+        },
+        "mrp_inr": {
+          "key": "mrp_inr",
+          "label": "Maximum Retail Price (INR)",
+          "value": 1099,
+          "basis": "extracted",
+          "evidence": [
+            "E021"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "9bb2832c4c0ee94c",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "consumer_care": {
+          "key": "consumer_care",
+          "label": "Consumer Care Details",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+          "basis": "extracted",
+          "evidence": [
+            "E075"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "483efeeb9349d739",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "care_instructions": {
+          "key": "care_instructions",
+          "label": "Care Instructions",
+          "value": "Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+          "basis": "extracted",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "ba9c9b74e271e6eb",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "dishwasher_safe": {
+          "key": "dishwasher_safe",
+          "label": "Dishwasher Safe",
+          "value": "No",
+          "basis": "extracted",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "5936b6147ec4ad60",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "hsn_code": {
+          "key": "hsn_code",
+          "label": "HSN Code",
+          "value": "7323",
+          "basis": "extracted",
+          "evidence": [
+            "E023"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "a8c3db05bf595de4",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        }
+      }
+    },
+    "NW-BTL-500-PNK": {
+      "sku": "NW-BTL-500-PNK",
+      "packet_hash": "7f00ea5fc22c75a7",
+      "issues": [],
+      "counts": {
+        "AUTO_APPROVED": 21,
+        "NEEDS_REVIEW": 1,
+        "NOT_APPLICABLE": 1,
+        "NOT_FOUND": 1
+      },
+      "ready_without_review": true,
+      "blocking_fields": [],
+      "fields": {
+        "item_name": {
+          "key": "item_name",
+          "label": "Product Name (Title)",
+          "value": "Northwind Home Insulated Water Bottle with Leak-Proof Lid, Slim Body, Stainless Steel, Pink",
+          "basis": "composed",
+          "evidence": [
+            "E087",
+            "E080",
+            "E081",
+            "E088",
+            "E027",
+            "E031"
+          ],
+          "note": "capacity left out of the title because the spec sheet (500 ml) and catalogue (550 ml) disagree",
+          "required": true,
+          "critical": false,
+          "answer_hash": "a26b3fe9f30ddfe3",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "brand_name": {
+          "key": "brand_name",
+          "label": "Brand Name",
+          "value": "Northwind Home",
+          "basis": "extracted",
+          "evidence": [
+            "E026",
+            "E072"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "06dec31719f42233",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_name": {
+          "key": "generic_name",
+          "label": "Common or Generic Name",
+          "value": "Water Bottle",
+          "basis": "extracted",
+          "evidence": [
+            "E087"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0ce8f9ac877a4e01",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point1": {
+          "key": "bullet_point1",
+          "label": "Bullet Point 1",
+          "value": "Cold for 24 Hours: Double-wall vacuum insulation keeps drinks cold for up to 24 hours and hot for up to 12 hours, as tested by the supplier (LT-2291).",
+          "basis": "composed",
+          "evidence": [
+            "E080"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7496187dc10c1b13",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point2": {
+          "key": "bullet_point2",
+          "label": "Bullet Point 2",
+          "value": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+          "basis": "composed",
+          "evidence": [
+            "E078",
+            "E027"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "99cbb684065d88b8",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point3": {
+          "key": "bullet_point3",
+          "label": "Bullet Point 3",
+          "value": "Slim and School-Ready: A slim body for school bags, with a screw lid that passed a 24-hour inverted leak test (QC-221).",
+          "basis": "composed",
+          "evidence": [
+            "E088",
+            "E081"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "fd4438fcd60831ab",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point4": {
+          "key": "bullet_point4",
+          "label": "Bullet Point 4",
+          "value": "Easy Care: Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+          "basis": "composed",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "9a48b6f472efbb96",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point5": {
+          "key": "bullet_point5",
+          "label": "Bullet Point 5",
+          "value": "In the Box: 1 water bottle with screw lid, in a blush pink powder-coated finish.",
+          "basis": "composed",
+          "evidence": [
+            "E032",
+            "E088"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "f0875745bf7b7341",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "product_description": {
+          "key": "product_description",
+          "label": "Product Description",
+          "value": "A slim double-wall insulated water bottle that fits easily into school bags. In the supplier's lab test (LT-2291) it keeps drinks cold for up to 24 hours and hot for up to 12 hours, and its screw lid passed a 24-hour inverted leak test (QC-221).\n\nThe body is made from 18/8 (SS 304) food-grade stainless steel (MD-304-2026) with a blush pink powder-coated finish. Hand wash only with warm soapy water; it is not dishwasher safe. Do not freeze.",
+          "basis": "composed",
+          "evidence": [
+            "E080",
+            "E081",
+            "E078",
+            "E088",
+            "E082"
+          ],
+          "note": "capacity left out because the sources disagree",
+          "required": true,
+          "critical": false,
+          "answer_hash": "ecbc35e71265e672",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_keywords": {
+          "key": "generic_keywords",
+          "label": "Search Terms",
+          "value": "flask sipper drinkware kids school bottle hydration tuition sports cold hot beverage",
+          "basis": "composed",
+          "evidence": [
+            "E087",
+            "E088"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "573ec62ddd29e403",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "material": {
+          "key": "material",
+          "label": "Material",
+          "value": "Stainless Steel",
+          "basis": "extracted",
+          "evidence": [
+            "E027",
+            "E078"
+          ],
+          "note": "SS 304 = stainless steel",
+          "required": true,
+          "critical": false,
+          "answer_hash": "262c628c99bd832d",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "colour": {
+          "key": "colour",
+          "label": "Colour",
+          "value": "Pink",
+          "basis": "extracted",
+          "evidence": [
+            "E031",
+            "E088"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "1219bfc9a12156d0",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "capacity_ml": {
+          "key": "capacity_ml",
+          "label": "Capacity (ml)",
+          "value": 500,
+          "basis": "extracted",
+          "evidence": [
+            "E028"
+          ],
+          "note": "conflict: spec sheet 500 ml (E028) vs catalogue 550 ml (E087, E088); the supplier must confirm",
+          "required": false,
+          "critical": false,
+          "answer_hash": "1182bebaae0fa711",
+          "status": "NEEDS_REVIEW",
+          "score": 0.85,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 0.0,
+            "basis": 1.0
+          },
+          "issues": [
+            "sources disagree: supplier_specs.xlsx says 500; supplier_catalogue.pdf says 550"
+          ],
+          "ai_fixable": false
+        },
+        "item_dimensions_cm": {
+          "key": "item_dimensions_cm",
+          "label": "Item Dimensions L x W x H (cm)",
+          "value": "7 x 7 x 22.5",
+          "basis": "extracted",
+          "evidence": [
+            "E029"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7149a81896d85ce2",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_weight_g": {
+          "key": "item_weight_g",
+          "label": "Item Weight (g)",
+          "value": 260,
+          "basis": "extracted",
+          "evidence": [
+            "E030"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "9a9bffe3c8cda616",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "net_quantity": {
+          "key": "net_quantity",
+          "label": "Net Quantity",
+          "value": "1 N",
+          "basis": "extracted",
+          "evidence": [
+            "E032"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "158e1c484055c39b",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "country_of_origin": {
+          "key": "country_of_origin",
+          "label": "Country of Origin",
+          "value": "India",
+          "basis": "extracted",
+          "evidence": [
+            "E034"
+          ],
+          "note": "Made in India",
+          "required": true,
+          "critical": true,
+          "answer_hash": "8a4b211223670dfe",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "manufacturer_details": {
+          "key": "manufacturer_details",
+          "label": "Manufacturer Name and Address",
+          "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+          "basis": "extracted",
+          "evidence": [
+            "E073"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0560c3d3e472bd78",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "importer_details": {
+          "key": "importer_details",
+          "label": "Importer Name and Address",
+          "value": null,
+          "basis": "not_applicable",
+          "evidence": [
+            "E034"
+          ],
+          "note": "made in India, not imported",
+          "required": false,
+          "critical": true,
+          "answer_hash": "6a6d9b3254ca8225",
+          "status": "NOT_APPLICABLE",
+          "score": 1.0,
+          "signals": {},
+          "issues": []
+        },
+        "mrp_inr": {
+          "key": "mrp_inr",
+          "label": "Maximum Retail Price (INR)",
+          "value": 749,
+          "basis": "extracted",
+          "evidence": [
+            "E033"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "47a91bf355db91d6",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "consumer_care": {
+          "key": "consumer_care",
+          "label": "Consumer Care Details",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+          "basis": "extracted",
+          "evidence": [
+            "E075"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "483efeeb9349d739",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "care_instructions": {
+          "key": "care_instructions",
+          "label": "Care Instructions",
+          "value": "Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+          "basis": "extracted",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "ba9c9b74e271e6eb",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "dishwasher_safe": {
+          "key": "dishwasher_safe",
+          "label": "Dishwasher Safe",
+          "value": "No",
+          "basis": "extracted",
+          "evidence": [
+            "E082"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "5936b6147ec4ad60",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "hsn_code": {
+          "key": "hsn_code",
+          "label": "HSN Code",
+          "value": null,
+          "basis": "not_found",
+          "evidence": [],
+          "note": "the spec sheet has no HSN code for this product",
+          "required": false,
+          "critical": false,
+          "answer_hash": "afa6e79f247779c7",
+          "status": "NOT_FOUND",
+          "score": 0.0,
+          "signals": {},
+          "issues": [
+            "the spec sheet has no HSN code for this product"
+          ]
+        }
+      }
+    },
+    "NW-LBX-3C-SS": {
+      "sku": "NW-LBX-3C-SS",
+      "packet_hash": "12ab6d7247aada5f",
+      "issues": [],
+      "counts": {
+        "AUTO_APPROVED": 23,
+        "NOT_APPLICABLE": 1
+      },
+      "ready_without_review": true,
+      "blocking_fields": [],
+      "fields": {
+        "item_name": {
+          "key": "item_name",
+          "label": "Product Name (Title)",
+          "value": "Northwind Home Three-Compartment Lunch Box with BPA-Free Gasket, 1200 ml, Stainless Steel, Silver",
+          "basis": "composed",
+          "evidence": [
+            "E089",
+            "E090",
+            "E039",
+            "E038",
+            "E042"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "1128d395716f3acd",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "brand_name": {
+          "key": "brand_name",
+          "label": "Brand Name",
+          "value": "Northwind Home",
+          "basis": "extracted",
+          "evidence": [
+            "E037",
+            "E072"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "0f3c14086741db52",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_name": {
+          "key": "generic_name",
+          "label": "Common or Generic Name",
+          "value": "Lunch Box",
+          "basis": "extracted",
+          "evidence": [
+            "E089"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "21ff6770a4868d46",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point1": {
+          "key": "bullet_point1",
+          "label": "Bullet Point 1",
+          "value": "Three Compartments: Three 400 ml sections, 1200 ml in total, keep different foods apart.",
+          "basis": "composed",
+          "evidence": [
+            "E090"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "43bcf0962dc20f79",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point2": {
+          "key": "bullet_point2",
+          "label": "Bullet Point 2",
+          "value": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+          "basis": "composed",
+          "evidence": [
+            "E078",
+            "E038"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "beadf712235ab18b",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point3": {
+          "key": "bullet_point3",
+          "label": "Bullet Point 3",
+          "value": "BPA-Free Gasket: The silicone gasket is BPA-free, as per supplier declaration SD-118.",
+          "basis": "composed",
+          "evidence": [
+            "E090",
+            "E047"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "ccd6271c47fce395",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point4": {
+          "key": "bullet_point4",
+          "label": "Bullet Point 4",
+          "value": "Easy Care: The container is dishwasher safe. Remove the gasket and wash it by hand.",
+          "basis": "composed",
+          "evidence": [
+            "E091"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "7c2a16161071d7b2",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point5": {
+          "key": "bullet_point5",
+          "label": "Bullet Point 5",
+          "value": "Please Note: Not suitable for microwave use. In the box: 1 lunch box.",
+          "basis": "composed",
+          "evidence": [
+            "E091",
+            "E043"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "6a871968fd7acdca",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "product_description": {
+          "key": "product_description",
+          "label": "Product Description",
+          "value": "A three-compartment stainless steel lunch box for packed meals. Three 400 ml sections, 1200 ml in total, keep different foods apart, and the silicone gasket is BPA-free (supplier declaration SD-118).\n\nThe box is made from 18/8 (SS 304) food-grade stainless steel (MD-304-2026). The container is dishwasher safe; remove the gasket and wash it by hand. Not suitable for microwave use.",
+          "basis": "composed",
+          "evidence": [
+            "E090",
+            "E078",
+            "E091"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "057de3bc29c1c317",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_keywords": {
+          "key": "generic_keywords",
+          "label": "Search Terms",
+          "value": "tiffin box steel tiffin office lunch school lunch meal box food container divided tiffin",
+          "basis": "composed",
+          "evidence": [
+            "E089",
+            "E036"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "0fc8c2954b33337d",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "material": {
+          "key": "material",
+          "label": "Material",
+          "value": "Stainless Steel",
+          "basis": "extracted",
+          "evidence": [
+            "E038",
+            "E078"
+          ],
+          "note": "SS 304 = stainless steel",
+          "required": true,
+          "critical": false,
+          "answer_hash": "9b4c08b27ee4f173",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "colour": {
+          "key": "colour",
+          "label": "Colour",
+          "value": "Silver",
+          "basis": "extracted",
+          "evidence": [
+            "E042"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "4188925fc6ebaa5e",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "capacity_ml": {
+          "key": "capacity_ml",
+          "label": "Capacity (ml)",
+          "value": 1200,
+          "basis": "extracted",
+          "evidence": [
+            "E039",
+            "E090"
+          ],
+          "note": "total of three 400 ml compartments",
+          "required": false,
+          "critical": false,
+          "answer_hash": "459b21b0c9614ff4",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_dimensions_cm": {
+          "key": "item_dimensions_cm",
+          "label": "Item Dimensions L x W x H (cm)",
+          "value": "21 x 15 x 7",
+          "basis": "extracted",
+          "evidence": [
+            "E040"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "4c7ac7728817fe02",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_weight_g": {
+          "key": "item_weight_g",
+          "label": "Item Weight (g)",
+          "value": 520,
+          "basis": "extracted",
+          "evidence": [
+            "E041"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "3b4464d5c253a82a",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "net_quantity": {
+          "key": "net_quantity",
+          "label": "Net Quantity",
+          "value": "1 N",
+          "basis": "extracted",
+          "evidence": [
+            "E043"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "80433c946fb0bef2",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "country_of_origin": {
+          "key": "country_of_origin",
+          "label": "Country of Origin",
+          "value": "India",
+          "basis": "extracted",
+          "evidence": [
+            "E045"
+          ],
+          "note": "Made in India",
+          "required": true,
+          "critical": true,
+          "answer_hash": "bf3219461a2d0fbf",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "manufacturer_details": {
+          "key": "manufacturer_details",
+          "label": "Manufacturer Name and Address",
+          "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+          "basis": "extracted",
+          "evidence": [
+            "E073"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0560c3d3e472bd78",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "importer_details": {
+          "key": "importer_details",
+          "label": "Importer Name and Address",
+          "value": null,
+          "basis": "not_applicable",
+          "evidence": [
+            "E045"
+          ],
+          "note": "made in India, not imported",
+          "required": false,
+          "critical": true,
+          "answer_hash": "eec6cb3488cd68d2",
+          "status": "NOT_APPLICABLE",
+          "score": 1.0,
+          "signals": {},
+          "issues": []
+        },
+        "mrp_inr": {
+          "key": "mrp_inr",
+          "label": "Maximum Retail Price (INR)",
+          "value": 1299,
+          "basis": "extracted",
+          "evidence": [
+            "E044"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "ad7f1589c295bd6c",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "consumer_care": {
+          "key": "consumer_care",
+          "label": "Consumer Care Details",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+          "basis": "extracted",
+          "evidence": [
+            "E075"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "483efeeb9349d739",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "care_instructions": {
+          "key": "care_instructions",
+          "label": "Care Instructions",
+          "value": "Not suitable for microwave use. The container is dishwasher safe; remove the gasket and wash it by hand.",
+          "basis": "extracted",
+          "evidence": [
+            "E091"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "481733cb9cd9ed91",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "dishwasher_safe": {
+          "key": "dishwasher_safe",
+          "label": "Dishwasher Safe",
+          "value": "Yes",
+          "basis": "extracted",
+          "evidence": [
+            "E091"
+          ],
+          "note": "container only; wash the gasket by hand",
+          "required": false,
+          "critical": false,
+          "answer_hash": "0ece4a2b03063db5",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "hsn_code": {
+          "key": "hsn_code",
+          "label": "HSN Code",
+          "value": "7323",
+          "basis": "extracted",
+          "evidence": [
+            "E046"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "b52e8726aad606ee",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        }
+      }
+    },
+    "NW-JAR-SET4-GLS": {
+      "sku": "NW-JAR-SET4-GLS",
+      "packet_hash": "9dc9426ba97c60de",
+      "issues": [],
+      "counts": {
+        "AUTO_APPROVED": 23,
+        "NOT_FOUND": 1
+      },
+      "ready_without_review": false,
+      "blocking_fields": [
+        "manufacturer_details"
+      ],
+      "fields": {
+        "item_name": {
+          "key": "item_name",
+          "label": "Product Name (Title)",
+          "value": "Northwind Home Glass Storage Jars with Airtight Bamboo Lids, Set of 4, 1000 ml Each, Clear",
+          "basis": "composed",
+          "evidence": [
+            "E092",
+            "E093",
+            "E051",
+            "E054"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "4a5e5c9abd893f96",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "brand_name": {
+          "key": "brand_name",
+          "label": "Brand Name",
+          "value": "Northwind Home",
+          "basis": "extracted",
+          "evidence": [
+            "E049",
+            "E072"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "f928f2f40c5fd856",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_name": {
+          "key": "generic_name",
+          "label": "Common or Generic Name",
+          "value": "Storage Jar",
+          "basis": "extracted",
+          "evidence": [
+            "E092"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "d6b41eda12988b7a",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point1": {
+          "key": "bullet_point1",
+          "label": "Bullet Point 1",
+          "value": "Airtight Fit: Bamboo lids with a silicone seal give each jar an airtight fit.",
+          "basis": "composed",
+          "evidence": [
+            "E093"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "3957850f15c5ff5e",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point2": {
+          "key": "bullet_point2",
+          "label": "Bullet Point 2",
+          "value": "Borosilicate Glass: Four clear borosilicate glass jars, 1000 ml each, so you can see what is inside.",
+          "basis": "composed",
+          "evidence": [
+            "E093",
+            "E054"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "5ef3587718ee9511",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point3": {
+          "key": "bullet_point3",
+          "label": "Bullet Point 3",
+          "value": "Size: Each jar measures 10 x 10 x 18 cm; the set of 4 weighs 2.4 kg.",
+          "basis": "composed",
+          "evidence": [
+            "E052",
+            "E053"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "020b8e330ebfcb43",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point4": {
+          "key": "bullet_point4",
+          "label": "Bullet Point 4",
+          "value": "Easy Care: The glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth.",
+          "basis": "composed",
+          "evidence": [
+            "E094"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "382004039bfe43ae",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point5": {
+          "key": "bullet_point5",
+          "label": "Bullet Point 5",
+          "value": "In the Box: 4 glass jars with bamboo lids. Country of origin: China.",
+          "basis": "composed",
+          "evidence": [
+            "E055",
+            "E093",
+            "E095"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "1bdae822b2bc7a54",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "product_description": {
+          "key": "product_description",
+          "label": "Product Description",
+          "value": "A set of four clear borosilicate glass storage jars for the kitchen. Each jar holds 1000 ml and has a bamboo lid with a silicone seal for an airtight fit.\n\nEach jar measures 10 x 10 x 18 cm. The glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth. Country of origin: China.",
+          "basis": "composed",
+          "evidence": [
+            "E093",
+            "E052",
+            "E094",
+            "E095"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "2694bbcabaeaccc4",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_keywords": {
+          "key": "generic_keywords",
+          "label": "Search Terms",
+          "value": "kitchen containers pantry jars canisters spice jars dal storage sugar container tea coffee container",
+          "basis": "composed",
+          "evidence": [
+            "E092",
+            "E048"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "566fb4c8d344e348",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "material": {
+          "key": "material",
+          "label": "Material",
+          "value": "Glass",
+          "basis": "extracted",
+          "evidence": [
+            "E050",
+            "E093"
+          ],
+          "note": "borosilicate glass",
+          "required": true,
+          "critical": false,
+          "answer_hash": "84a272dbd226130e",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "colour": {
+          "key": "colour",
+          "label": "Colour",
+          "value": "Clear",
+          "basis": "extracted",
+          "evidence": [
+            "E054"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "79542f166e7c17f4",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "capacity_ml": {
+          "key": "capacity_ml",
+          "label": "Capacity (ml)",
+          "value": 1000,
+          "basis": "extracted",
+          "evidence": [
+            "E051",
+            "E093"
+          ],
+          "note": "per jar",
+          "required": false,
+          "critical": false,
+          "answer_hash": "f5e6446fb8b34d59",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_dimensions_cm": {
+          "key": "item_dimensions_cm",
+          "label": "Item Dimensions L x W x H (cm)",
+          "value": "10 x 10 x 18",
+          "basis": "extracted",
+          "evidence": [
+            "E052"
+          ],
+          "note": "each jar",
+          "required": true,
+          "critical": false,
+          "answer_hash": "93b5f1ec5e780750",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_weight_g": {
+          "key": "item_weight_g",
+          "label": "Item Weight (g)",
+          "value": 2400,
+          "basis": "converted",
+          "evidence": [
+            "E053"
+          ],
+          "note": "2.4 kg = 2400 g, whole set",
+          "required": true,
+          "critical": false,
+          "answer_hash": "92f1a5fe31de8284",
+          "status": "AUTO_APPROVED",
+          "score": 0.99,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.9
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "net_quantity": {
+          "key": "net_quantity",
+          "label": "Net Quantity",
+          "value": "4 N",
+          "basis": "extracted",
+          "evidence": [
+            "E055"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "59828ab704c47b56",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "country_of_origin": {
+          "key": "country_of_origin",
+          "label": "Country of Origin",
+          "value": "China",
+          "basis": "extracted",
+          "evidence": [
+            "E057",
+            "E095"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "74d8368949057ea2",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "manufacturer_details": {
+          "key": "manufacturer_details",
+          "label": "Manufacturer Name and Address",
+          "value": null,
+          "basis": "not_found",
+          "evidence": [],
+          "note": "The only 'Manufactured by' line (E073) names an Indian steel maker. These jars are made in China and the foreign manufacturer is not stated. Ask the supplier.",
+          "required": true,
+          "critical": true,
+          "answer_hash": "16f2a4abfbb79f80",
+          "status": "NOT_FOUND",
+          "score": 0.0,
+          "signals": {},
+          "issues": [
+            "The only 'Manufactured by' line (E073) names an Indian steel maker. These jars are made in China and the foreign manufacturer is not stated. Ask the supplier.",
+            "required field has no supported value"
+          ]
+        },
+        "importer_details": {
+          "key": "importer_details",
+          "label": "Importer Name and Address",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, India",
+          "basis": "extracted",
+          "evidence": [
+            "E096"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "238a6e1eb2e03a61",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "mrp_inr": {
+          "key": "mrp_inr",
+          "label": "Maximum Retail Price (INR)",
+          "value": 1499,
+          "basis": "extracted",
+          "evidence": [
+            "E056"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "bf19c5f8ad4197b4",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "consumer_care": {
+          "key": "consumer_care",
+          "label": "Consumer Care Details",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+          "basis": "extracted",
+          "evidence": [
+            "E075"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "483efeeb9349d739",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "care_instructions": {
+          "key": "care_instructions",
+          "label": "Care Instructions",
+          "value": "Glass jars are dishwasher safe; wipe the bamboo lids clean with a damp cloth.",
+          "basis": "extracted",
+          "evidence": [
+            "E094"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "304bc28e45f8ad02",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "dishwasher_safe": {
+          "key": "dishwasher_safe",
+          "label": "Dishwasher Safe",
+          "value": "Yes",
+          "basis": "extracted",
+          "evidence": [
+            "E094"
+          ],
+          "note": "glass jars only; wipe the lids by hand",
+          "required": false,
+          "critical": false,
+          "answer_hash": "79f709b85725c544",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "hsn_code": {
+          "key": "hsn_code",
+          "label": "HSN Code",
+          "value": "7013",
+          "basis": "extracted",
+          "evidence": [
+            "E058"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "1b7c08211d5240ee",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        }
+      }
+    },
+    "NW-CUT-BMB-01": {
+      "sku": "NW-CUT-BMB-01",
+      "packet_hash": "dcb8e48aee5a167c",
+      "issues": [],
+      "counts": {
+        "AUTO_APPROVED": 20,
+        "NOT_APPLICABLE": 2,
+        "NOT_FOUND": 2
+      },
+      "ready_without_review": false,
+      "blocking_fields": [
+        "mrp_inr"
+      ],
+      "fields": {
+        "item_name": {
+          "key": "item_name",
+          "label": "Product Name (Title)",
+          "value": "Northwind Home Large Bamboo Chopping Board with Juice Groove, Natural",
+          "basis": "composed",
+          "evidence": [
+            "E097",
+            "E098",
+            "E062",
+            "E065"
+          ],
+          "note": "left out 'eco friendly' and 'antibacterial' (spec sheet notes, no test or certificate reference)",
+          "required": true,
+          "critical": false,
+          "answer_hash": "7b5356361327bb76",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "brand_name": {
+          "key": "brand_name",
+          "label": "Brand Name",
+          "value": "Northwind Home",
+          "basis": "extracted",
+          "evidence": [
+            "E061",
+            "E072"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "e6a2825cc146ef8c",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_name": {
+          "key": "generic_name",
+          "label": "Common or Generic Name",
+          "value": "Chopping Board",
+          "basis": "extracted",
+          "evidence": [
+            "E097"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "e533b37189d43cdb",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point1": {
+          "key": "bullet_point1",
+          "label": "Bullet Point 1",
+          "value": "Juice Groove: A groove on one side catches juices while you chop.",
+          "basis": "composed",
+          "evidence": [
+            "E098"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "76551200743944a0",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point2": {
+          "key": "bullet_point2",
+          "label": "Bullet Point 2",
+          "value": "Moso Bamboo: Made from moso bamboo with a mineral oil finish.",
+          "basis": "composed",
+          "evidence": [
+            "E098",
+            "E062"
+          ],
+          "note": "left out 'food-safe' because the catalogue gives no test or declaration reference",
+          "required": true,
+          "critical": false,
+          "answer_hash": "6c7d308860d54792",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point3": {
+          "key": "bullet_point3",
+          "label": "Bullet Point 3",
+          "value": "Generous Size: Measures 38 x 28 x 1.8 cm and weighs 900 g.",
+          "basis": "composed",
+          "evidence": [
+            "E063",
+            "E064"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "fde5a19914bcd2be",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point4": {
+          "key": "bullet_point4",
+          "label": "Bullet Point 4",
+          "value": "Simple Care: Hand wash and dry upright. Re-oil once a month. Not dishwasher safe.",
+          "basis": "composed",
+          "evidence": [
+            "E099"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "06a72d2fb4d3f0c5",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "bullet_point5": {
+          "key": "bullet_point5",
+          "label": "Bullet Point 5",
+          "value": "In the Box: 1 large bamboo chopping board in a natural finish.",
+          "basis": "composed",
+          "evidence": [
+            "E066",
+            "E065",
+            "E097"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "b04309289833eca1",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "product_description": {
+          "key": "product_description",
+          "label": "Product Description",
+          "value": "A large bamboo chopping board with a juice groove on one side, made from moso bamboo with a mineral oil finish.\n\nIt measures 38 x 28 x 1.8 cm and weighs 900 g. Hand wash it and dry it upright, re-oil it once a month, and keep it out of the dishwasher: it is not dishwasher safe.",
+          "basis": "composed",
+          "evidence": [
+            "E098",
+            "E063",
+            "E064",
+            "E099"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "dbe9f81049c57b0a",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "generic_keywords": {
+          "key": "generic_keywords",
+          "label": "Search Terms",
+          "value": "cutting board kitchen board vegetable board wooden board chopping block serving board",
+          "basis": "composed",
+          "evidence": [
+            "E097",
+            "E060"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "c6e4f80572002a63",
+          "status": "AUTO_APPROVED",
+          "score": 0.985,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 0.85
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "material": {
+          "key": "material",
+          "label": "Material",
+          "value": "Bamboo",
+          "basis": "extracted",
+          "evidence": [
+            "E062",
+            "E098"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "04440486cccf65aa",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "colour": {
+          "key": "colour",
+          "label": "Colour",
+          "value": "Natural",
+          "basis": "extracted",
+          "evidence": [
+            "E065"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "0ee39b565f30713e",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "capacity_ml": {
+          "key": "capacity_ml",
+          "label": "Capacity (ml)",
+          "value": null,
+          "basis": "not_applicable",
+          "evidence": [
+            "E097"
+          ],
+          "note": "a chopping board has no capacity",
+          "required": false,
+          "critical": false,
+          "answer_hash": "a1661b1d2afd192e",
+          "status": "NOT_APPLICABLE",
+          "score": 1.0,
+          "signals": {},
+          "issues": []
+        },
+        "item_dimensions_cm": {
+          "key": "item_dimensions_cm",
+          "label": "Item Dimensions L x W x H (cm)",
+          "value": "38 x 28 x 1.8",
+          "basis": "extracted",
+          "evidence": [
+            "E063"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "8c871b763f8a09e8",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "item_weight_g": {
+          "key": "item_weight_g",
+          "label": "Item Weight (g)",
+          "value": 900,
+          "basis": "extracted",
+          "evidence": [
+            "E064"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "81e34ad50792b7ee",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "net_quantity": {
+          "key": "net_quantity",
+          "label": "Net Quantity",
+          "value": "1 N",
+          "basis": "extracted",
+          "evidence": [
+            "E066"
+          ],
+          "note": "",
+          "required": true,
+          "critical": true,
+          "answer_hash": "f8f288a6850626b7",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "country_of_origin": {
+          "key": "country_of_origin",
+          "label": "Country of Origin",
+          "value": "India",
+          "basis": "extracted",
+          "evidence": [
+            "E068"
+          ],
+          "note": "Made in India",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0053847b839bcea1",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "manufacturer_details": {
+          "key": "manufacturer_details",
+          "label": "Manufacturer Name and Address",
+          "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+          "basis": "extracted",
+          "evidence": [
+            "E073"
+          ],
+          "note": "the catalogue's company 'Manufactured by' line; the board is made in India",
+          "required": true,
+          "critical": true,
+          "answer_hash": "815ad5e9e9599fa8",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "importer_details": {
+          "key": "importer_details",
+          "label": "Importer Name and Address",
+          "value": null,
+          "basis": "not_applicable",
+          "evidence": [
+            "E068"
+          ],
+          "note": "made in India, not imported",
+          "required": false,
+          "critical": true,
+          "answer_hash": "cff5d1ad5c10619f",
+          "status": "NOT_APPLICABLE",
+          "score": 1.0,
+          "signals": {},
+          "issues": []
+        },
+        "mrp_inr": {
+          "key": "mrp_inr",
+          "label": "Maximum Retail Price (INR)",
+          "value": null,
+          "basis": "not_found",
+          "evidence": [],
+          "note": "the spec sheet says MRP 'TBC' (E067). The MRP must come from the brand.",
+          "required": true,
+          "critical": true,
+          "answer_hash": "0e9a56d9fa8e873b",
+          "status": "NOT_FOUND",
+          "score": 0.0,
+          "signals": {},
+          "issues": [
+            "the spec sheet says MRP 'TBC' (E067). The MRP must come from the brand.",
+            "required field has no supported value"
+          ]
+        },
+        "consumer_care": {
+          "key": "consumer_care",
+          "label": "Consumer Care Details",
+          "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+          "basis": "extracted",
+          "evidence": [
+            "E075"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "483efeeb9349d739",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "care_instructions": {
+          "key": "care_instructions",
+          "label": "Care Instructions",
+          "value": "Hand wash and dry upright. Re-oil once a month. Not dishwasher safe.",
+          "basis": "extracted",
+          "evidence": [
+            "E099"
+          ],
+          "note": "",
+          "required": true,
+          "critical": false,
+          "answer_hash": "3e46b5dde88c6a6b",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "dishwasher_safe": {
+          "key": "dishwasher_safe",
+          "label": "Dishwasher Safe",
+          "value": "No",
+          "basis": "extracted",
+          "evidence": [
+            "E099"
+          ],
+          "note": "",
+          "required": false,
+          "critical": false,
+          "answer_hash": "2def0fbb89d12813",
+          "status": "AUTO_APPROVED",
+          "score": 1.0,
+          "signals": {
+            "evidence_present": 1.0,
+            "evidence_match": 1.0,
+            "rules": 1.0,
+            "source_agreement": 1.0,
+            "basis": 1.0
+          },
+          "issues": [],
+          "ai_fixable": false
+        },
+        "hsn_code": {
+          "key": "hsn_code",
+          "label": "HSN Code",
+          "value": null,
+          "basis": "not_found",
+          "evidence": [],
+          "note": "the spec sheet has no HSN code for this product",
+          "required": false,
+          "critical": false,
+          "answer_hash": "afa6e79f247779c7",
+          "status": "NOT_FOUND",
+          "score": 0.0,
+          "signals": {},
+          "issues": [
+            "the spec sheet has no HSN code for this product"
+          ]
+        }
+      }
+    }
+  }
+}

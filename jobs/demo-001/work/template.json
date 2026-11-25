@@ -1,0 +1,163 @@
+{
+  "file": "marketplace_template.xlsx",
+  "sheet": "Template",
+  "columns": [
+    {
+      "col": 1,
+      "key": "item_sku",
+      "label": "Seller SKU"
+    },
+    {
+      "col": 2,
+      "key": "item_name",
+      "label": "Product Name"
+    },
+    {
+      "col": 3,
+      "key": "brand_name",
+      "label": "Brand Name"
+    },
+    {
+      "col": 4,
+      "key": "generic_name",
+      "label": "Generic Name"
+    },
+    {
+      "col": 5,
+      "key": "bullet_point1",
+      "label": "Key Product Features 1"
+    },
+    {
+      "col": 6,
+      "key": "bullet_point2",
+      "label": "Key Product Features 2"
+    },
+    {
+      "col": 7,
+      "key": "bullet_point3",
+      "label": "Key Product Features 3"
+    },
+    {
+      "col": 8,
+      "key": "bullet_point4",
+      "label": "Key Product Features 4"
+    },
+    {
+      "col": 9,
+      "key": "bullet_point5",
+      "label": "Key Product Features 5"
+    },
+    {
+      "col": 10,
+      "key": "product_description",
+      "label": "Product Description"
+    },
+    {
+      "col": 11,
+      "key": "generic_keywords",
+      "label": "Search Terms"
+    },
+    {
+      "col": 12,
+      "key": "material",
+      "label": "Material"
+    },
+    {
+      "col": 13,
+      "key": "colour",
+      "label": "Colour"
+    },
+    {
+      "col": 14,
+      "key": "capacity_ml",
+      "label": "Capacity (ml)"
+    },
+    {
+      "col": 15,
+      "key": "item_dimensions_cm",
+      "label": "Item Dimensions L x W x H (cm)"
+    },
+    {
+      "col": 16,
+      "key": "item_weight_g",
+      "label": "Item Weight (g)"
+    },
+    {
+      "col": 17,
+      "key": "net_quantity",
+      "label": "Net Quantity"
+    },
+    {
+      "col": 18,
+      "key": "country_of_origin",
+      "label": "Country of Origin"
+    },
+    {
+      "col": 19,
+      "key": "manufacturer_details",
+      "label": "Manufacturer"
+    },
+    {
+      "col": 20,
+      "key": "importer_details",
+      "label": "Importer"
+    },
+    {
+      "col": 21,
+      "key": "mrp_inr",
+      "label": "Maximum Retail Price"
+    },
+    {
+      "col": 22,
+      "key": "consumer_care",
+      "label": "Consumer Care"
+    },
+    {
+      "col": 23,
+      "key": "care_instructions",
+      "label": "Care Instructions"
+    },
+    {
+      "col": 24,
+      "key": "dishwasher_safe",
+      "label": "Dishwasher Safe"
+    },
+    {
+      "col": 25,
+      "key": "hsn_code",
+      "label": "HSN Code"
+    },
+    {
+      "col": 26,
+      "key": "main_image_url",
+      "label": "Main Image URL"
+    }
+  ],
+  "rows": [
+    {
+      "sku": "NW-BTL-750-BLK",
+      "row": 3
+    },
+    {
+      "sku": "NW-BTL-1000-BLU",
+      "row": 4
+    },
+    {
+      "sku": "NW-BTL-500-PNK",
+      "row": 5
+    },
+    {
+      "sku": "NW-LBX-3C-SS",
+      "row": 6
+    },
+    {
+      "sku": "NW-JAR-SET4-GLS",
+      "row": 7
+    },
+    {
+      "sku": "NW-CUT-BMB-01",
+      "row": 8
+    }
+  ],
+  "sha256": "3d17af3134715768d3ee3836a425fb13deca1b1fe7c889c5d2fce8f62b7b7214"
+}

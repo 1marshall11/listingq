@@ -1,0 +1,309 @@
+{
+  "sku": "NW-BTL-1000-BLU",
+  "packet_hash": "99d87937baf9db63",
+  "generated_by": "claude-code",
+  "fields": {
+    "brand_name": {
+      "value": "Northwind Home",
+      "basis": "extracted",
+      "evidence": [
+        "E014",
+        "E072"
+      ],
+      "note": ""
+    },
+    "item_name": {
+      "value": "Northwind Home Insulated Water Bottle with Leak-Proof Lid, 1000 ml, Stainless Steel, Blue",
+      "basis": "composed",
+      "evidence": [
+        "E085",
+        "E080",
+        "E081",
+        "E086",
+        "E015",
+        "E019"
+      ],
+      "claims": [
+        {
+          "text": "Insulated",
+          "evidence": [
+            "E080"
+          ]
+        },
+        {
+          "text": "Leak-Proof Lid",
+          "evidence": [
+            "E081"
+          ]
+        },
+        {
+          "text": "1000 ml",
+          "evidence": [
+            "E086"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_name": {
+      "value": "Water Bottle",
+      "basis": "extracted",
+      "evidence": [
+        "E085"
+      ],
+      "note": ""
+    },
+    "bullet_point1": {
+      "value": "Cold for 24 Hours: Double-wall vacuum insulation keeps drinks cold for up to 24 hours and hot for up to 12 hours, as tested by the supplier (LT-2291).",
+      "basis": "composed",
+      "evidence": [
+        "E080"
+      ],
+      "claims": [
+        {
+          "text": "keeps drinks cold for up to 24 hours and hot for up to 12 hours",
+          "evidence": [
+            "E080"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point2": {
+      "value": "Food-Grade Steel: Made from 18/8 (SS 304) food-grade stainless steel, as declared by the supplier (MD-304-2026).",
+      "basis": "composed",
+      "evidence": [
+        "E078",
+        "E015"
+      ],
+      "claims": [
+        {
+          "text": "food-grade 18/8 (SS 304) stainless steel",
+          "evidence": [
+            "E078"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point3": {
+      "value": "Big Capacity, Easy Carry: Holds 1000 ml, with a carry loop on the lid and a screw lid that passed a 24-hour inverted leak test (QC-221).",
+      "basis": "composed",
+      "evidence": [
+        "E086",
+        "E081"
+      ],
+      "claims": [
+        {
+          "text": "1000 ml, carry loop on the lid",
+          "evidence": [
+            "E086"
+          ]
+        },
+        {
+          "text": "screw lid passed a 24-hour inverted leak test",
+          "evidence": [
+            "E081"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point4": {
+      "value": "Easy Care: Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+      "basis": "composed",
+      "evidence": [
+        "E082"
+      ],
+      "claims": [
+        {
+          "text": "Not dishwasher safe",
+          "evidence": [
+            "E082"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "bullet_point5": {
+      "value": "In the Box: 1 water bottle with screw lid, in an ocean blue powder-coated finish.",
+      "basis": "composed",
+      "evidence": [
+        "E020",
+        "E086"
+      ],
+      "claims": [
+        {
+          "text": "ocean blue powder-coated finish",
+          "evidence": [
+            "E086"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "product_description": {
+      "value": "A large double-wall insulated water bottle for long days out. In the supplier's lab test (LT-2291) it keeps drinks cold for up to 24 hours and hot for up to 12 hours, and its screw lid passed a 24-hour inverted leak test (QC-221).\n\nThe 1000 ml body is made from 18/8 (SS 304) food-grade stainless steel (MD-304-2026) with an ocean blue powder-coated finish and a carry loop on the lid. Hand wash only with warm soapy water; it is not dishwasher safe. Do not freeze.",
+      "basis": "composed",
+      "evidence": [
+        "E080",
+        "E081",
+        "E078",
+        "E086",
+        "E082"
+      ],
+      "claims": [
+        {
+          "text": "insulated; keeps drinks cold for up to 24 hours and hot for up to 12 hours",
+          "evidence": [
+            "E080"
+          ]
+        },
+        {
+          "text": "food-grade 18/8 (SS 304) stainless steel",
+          "evidence": [
+            "E078"
+          ]
+        },
+        {
+          "text": "not dishwasher safe",
+          "evidence": [
+            "E082"
+          ]
+        },
+        {
+          "text": "1000 ml, carry loop",
+          "evidence": [
+            "E086"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    "generic_keywords": {
+      "value": "flask sipper drinkware hydration gym office travel trekking big bottle litre cold hot beverage",
+      "basis": "composed",
+      "evidence": [
+        "E085",
+        "E086"
+      ],
+      "claims": [],
+      "note": ""
+    },
+    "material": {
+      "value": "Stainless Steel",
+      "basis": "extracted",
+      "evidence": [
+        "E015",
+        "E078"
+      ],
+      "note": "SS 304 = stainless steel"
+    },
+    "colour": {
+      "value": "Blue",
+      "basis": "extracted",
+      "evidence": [
+        "E019",
+        "E086"
+      ],
+      "note": "Blu / ocean blue = Blue"
+    },
+    "capacity_ml": {
+      "value": 1000,
+      "basis": "extracted",
+      "evidence": [
+        "E086",
+        "E016"
+      ],
+      "note": "catalogue 1000 ml; spec sheet 1 ltr"
+    },
+    "item_dimensions_cm": {
+      "value": "8.5 x 8.5 x 29",
+      "basis": "extracted",
+      "evidence": [
+        "E017"
+      ],
+      "note": ""
+    },
+    "item_weight_g": {
+      "value": 410,
+      "basis": "converted",
+      "evidence": [
+        "E018"
+      ],
+      "note": "0.41 kg = 410 g"
+    },
+    "net_quantity": {
+      "value": "1 N",
+      "basis": "extracted",
+      "evidence": [
+        "E020"
+      ],
+      "note": ""
+    },
+    "country_of_origin": {
+      "value": "India",
+      "basis": "extracted",
+      "evidence": [
+        "E022"
+      ],
+      "note": "Made in India"
+    },
+    "manufacturer_details": {
+      "value": "Demo Metalworks Pvt. Ltd., Plot 12, Example Industrial Estate, Rajkot, Gujarat 360001, India",
+      "basis": "extracted",
+      "evidence": [
+        "E073"
+      ],
+      "note": ""
+    },
+    "importer_details": {
+      "value": null,
+      "basis": "not_applicable",
+      "evidence": [
+        "E022"
+      ],
+      "note": "made in India, not imported"
+    },
+    "mrp_inr": {
+      "value": 1099,
+      "basis": "extracted",
+      "evidence": [
+        "E021"
+      ],
+      "note": ""
+    },
+    "consumer_care": {
+      "value": "Northwind Home Trading LLP, Unit 4, Example Business Park, Ahmedabad, Gujarat 380015, care@northwind-home.example, +91 00000 00000",
+      "basis": "extracted",
+      "evidence": [
+        "E075"
+      ],
+      "note": ""
+    },
+    "care_instructions": {
+      "value": "Hand wash only with warm soapy water. Not dishwasher safe. Do not freeze.",
+      "basis": "extracted",
+      "evidence": [
+        "E082"
+      ],
+      "note": ""
+    },
+    "dishwasher_safe": {
+      "value": "No",
+      "basis": "extracted",
+      "evidence": [
+        "E082"
+      ],
+      "note": ""
+    },
+    "hsn_code": {
+      "value": "7323",
+      "basis": "extracted",
+      "evidence": [
+        "E023"
+      ],
+      "note": ""
+    }
+  }
+}

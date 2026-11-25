@@ -1,0 +1,12 @@
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "intake", "status": "DONE", "files": 3, "unsupported": 0}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "template", "status": "DONE", "fields": 25, "sku_rows": 6, "unmapped": ["main_image_url"]}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "parse", "status": "DONE", "evidence": 99, "by_scope": {"SKU": 86, "GLOBAL": 7, "FAMILY": 6}}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "packets", "status": "DONE", "skus": 6, "not_requested": []}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "prepare", "status": "DONE", "ms": 106}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "check", "status": "DONE", "run_no": 1, "totals": {"AUTO_APPROVED": 133, "NOT_APPLICABLE": 6, "NEEDS_REVIEW": 1, "NOT_FOUND": 4}, "ai_fixable": 0}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "review_sheet", "status": "DONE", "rows": 5, "decisions_carried_over": 0}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "review", "status": "APPLIED", "reviewer": "Demo reviewer (simulated)", "decisions": 1, "problems": 0}
+{"ts": "2026-11-23T18:49:42+00:00", "job_id": "demo-001", "stage": "deliver", "status": "DONE", "ready": 4, "total": 6, "flywheel_added": 4}
+{"ts": "2026-11-23T18:55:06+00:00", "job_id": "demo-001", "stage": "check", "status": "DONE", "run_no": 2, "totals": {"AUTO_APPROVED": 133, "NOT_APPLICABLE": 6, "NEEDS_REVIEW": 1, "NOT_FOUND": 4}, "ai_fixable": 0}
+{"ts": "2026-11-23T18:55:06+00:00", "job_id": "demo-001", "stage": "review_sheet", "status": "DONE", "rows": 5, "decisions_carried_over": 1}
+{"ts": "2026-11-23T18:55:07+00:00", "job_id": "demo-001", "stage": "deliver", "status": "DONE", "ready": 4, "total": 6, "flywheel_added": 0}

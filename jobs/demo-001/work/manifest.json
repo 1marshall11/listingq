@@ -1,0 +1,27 @@
+{
+  "job_id": "demo-001",
+  "profile_id": "amazon_in_home_kitchen",
+  "created_at": "2026-11-23T18:49:42+00:00",
+  "files": [
+    {
+      "name": "marketplace_template.xlsx",
+      "role": "template",
+      "sha256": "3d17af3134715768d3ee3836a425fb13deca1b1fe7c889c5d2fce8f62b7b7214",
+      "bytes": 7355
+    },
+    {
+      "name": "supplier_catalogue.pdf",
+      "role": "catalogue",
+      "sha256": "39df42fb09774939b2467cf40d660f5b2885afc1149db7e9ae5c93f542d0d01b",
+      "bytes": 3949
+    },
+    {
+      "name": "supplier_specs.xlsx",
+      "role": "supplier_sheet",
+      "sha256": "4c6fde74edaa93eb96f3a3c36c3cbc653ad9759f3104f280cd4ba4147df3b210",
+      "bytes": 5944
+    }
+  ],
+  "inputs_changed_since_last_run": null,
+  "status": "INTAKE_DONE"
+}

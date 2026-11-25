@@ -1,0 +1,260 @@
+# ListingQ marketplace profile
+# ---------------------------------------------------------------------------
+# One profile = the rules for one marketplace + brand. Add Flipkart, Noon or
+# Shopify by copying this file and changing the fields and rules. No code change.
+#
+# Sources for the rules (checked November 2026):
+# - Amazon product title requirements, effective 21 Jan 2025: max 200 characters
+#   for most categories; ! $ ? _ { } ^ ¬ ¦ not allowed (unless part of the brand
+#   name); no word more than twice (articles, prepositions, conjunctions exempt).
+# - India, Legal Metrology (Packaged Commodities) Rules 2011: r.6(10) makes an
+#   e-commerce entity display the r.6(1) declarations online, except month and
+#   year of manufacture. r.6(2) covers consumer-care details.
+# - India, Consumer Protection (E-Commerce) Rules 2020: r.6(5)(d) seller must give
+#   country of origin; amended r.4(6) (in force 1 Jan 2027) asks for the full and
+#   complete name of the country of origin for imported goods.
+# Limits marked "house rule" come from the brand guide, not the marketplace.
+# Check your category's style guide in Seller Central before live use.
+# ---------------------------------------------------------------------------
+
+profile_id: amazon_in_home_kitchen
+marketplace: Amazon.in-style flat file, Home & Kitchen (simplified for the demo)
+version: "2026-11-23"
+
+template:
+  sheet: Template
+  label_row: 1
+  key_row: 2
+  first_data_row: 3
+  sku_key: item_sku
+
+supplier_sheet:
+  sku_header_patterns: ["^item ?code$", "^sku$", "^seller sku$", "^article", "^style ?code", "^model ?no", "^product ?code"]
+
+catalogue:
+  # A line matching one of these switches the catalogue scope back to GLOBAL (company-wide facts).
+  global_section_patterns: ["^company", "^general", "^about ", "^contact"]
+
+thresholds:
+  not_found_below: 0.50        # fail-safe: below this the value is withheld
+  auto_approve: 0.80
+  auto_approve_critical: 0.90  # legally required declarations need more
+
+weights:
+  evidence_present: 0.25
+  evidence_match: 0.30
+  rules: 0.20
+  source_agreement: 0.15
+  basis: 0.10
+
+basis_strength:
+  extracted: 1.0
+  converted: 0.9
+  composed: 0.85
+
+# A test report or declaration reference such as LT-2291, QC-221, SD-118, MD-304-2026
+proof_reference_pattern: "\\b[A-Z]{2,4}-\\d{2,}(?:-\\d+)*\\b"
+
+banned_phrases: ["best", "best seller", "bestseller", "best quality", "no.1", "no 1", "number one", "#1", "100%",
+                 "guarantee", "guaranteed", "free shipping", "free delivery", "sale", "discount", "offer",
+                 "cheapest", "premium quality", "world class", "top rated"]
+
+# Claims that need a source line before they may appear in titles, bullets or descriptions.
+# proof_required: the source line must also carry a test/declaration reference.
+regulated_claims:
+  - {label: BPA-free, pattern: "\\bbpa\\b", proof_required: true}
+  - {label: food-grade / food-safe, pattern: "food[- ]?(grade|safe)", proof_required: true}
+  - {label: leak-proof, pattern: "leak[- ]?(proof|resistant|free)", proof_required: true}
+  - {label: insulation performance, pattern: "insulat|keeps? (drinks? )?(hot|cold)|\\b\\d+ ?(h|hrs?|hours?)\\b", proof_required: true}
+  - {label: antibacterial, pattern: "anti[- ]?(bacterial|microbial)", proof_required: true}
+  - {label: eco claim, pattern: "\\beco\\b|eco[- ]friendly|biodegradable|sustainab|compostable", proof_required: true}
+  - {label: certification, pattern: "certif|\\biso \\d|\\bfda\\b|\\blfgb\\b|\\bbis\\b", proof_required: true}
+  - {label: warranty, pattern: "warrant", proof_required: true}
+  - {label: dishwasher, pattern: "dish ?washer", proof_required: false}
+  - {label: microwave, pattern: "microwave", proof_required: false}
+  - {label: airtight, pattern: "air[- ]?tight", proof_required: false}
+
+# Cross-field checks: catch values that are supported by a line but wrong for this product.
+cross_checks:
+  - field: manufacturer_details
+    when: {field: country_of_origin, not_in: [India]}
+    must_not_match: "\\bindia\\b"
+    message: "the product is imported, but this manufacturer address is in India; confirm the actual manufacturer"
+
+# How an allowed value may be written in supplier documents.
+synonyms:
+  Stainless Steel: ["stainless steel", "\\bss ?304\\b", "18/8", "\\bss\\b", "stainless"]
+  Glass: ["glass", "borosilicate"]
+  Bamboo: ["bamboo"]
+  Ceramic: ["ceramic", "stoneware", "porcelain"]
+  Black: ["black", "\\bblk\\b"]
+  Blue: ["blue", "\\bblu\\b"]
+  Pink: ["pink", "\\bpnk\\b"]
+  Green: ["green", "\\bgrn\\b"]
+  Silver: ["silver", "brushed steel", "steel finish"]
+  Clear: ["clear", "transparent"]
+  Natural: ["natural"]
+  White: ["white", "\\bwht\\b"]
+  India: ["india", "\\bind\\b"]
+  China: ["china", "\\bprc\\b"]
+  "Yes": ["(?<!not )dish ?washer[- ]safe"]
+  "No": ["not dish ?washer", "hand[- ]wash"]
+
+fields:
+  - key: brand_name
+    label: Brand Name
+    kind: fact
+    type: text
+    required: true
+
+  - key: item_name
+    label: Product Name (Title)
+    kind: copy
+    required: true
+    hint: "Brand + Product type + Key feature, Capacity or size, Material, Colour (brand guide)."
+    rules:
+      max_chars: 150                 # house rule; Amazon allows 200
+      banned_chars: ["!", "$", "?", "_", "{", "}", "^", "¬", "¦"]
+      max_word_repeats: 2
+      repeat_exempt_words: [a, an, the, and, or, but, for, nor, so, yet, with, of, in, on, at, to, by, from, as, into, per]
+
+  - key: generic_name
+    label: Common or Generic Name
+    kind: fact
+    type: text
+    required: true
+    critical: true
+    law: "LM(PC) Rules 2011 r.6(1)(b)"
+    hint: "The plain product name from the supplier documents, e.g. 'Water Bottle'."
+
+  - {key: bullet_point1, label: Bullet Point 1, kind: copy, required: true, rules: {max_chars: 200, min_chars: 40}}
+  - {key: bullet_point2, label: Bullet Point 2, kind: copy, required: true, rules: {max_chars: 200, min_chars: 40}}
+  - {key: bullet_point3, label: Bullet Point 3, kind: copy, required: true, rules: {max_chars: 200, min_chars: 40}}
+  - {key: bullet_point4, label: Bullet Point 4, kind: copy, required: false, rules: {max_chars: 200, min_chars: 40}}
+  - {key: bullet_point5, label: Bullet Point 5, kind: copy, required: false, rules: {max_chars: 200, min_chars: 40}}
+
+  - key: product_description
+    label: Product Description
+    kind: copy
+    required: true
+    rules: {max_chars: 1000, min_chars: 150}   # house rule
+
+  - key: generic_keywords
+    label: Search Terms
+    kind: copy
+    required: false
+    hint: "Lower case, space separated, no commas, no brand names, no claims."
+    rules: {max_bytes: 250, lowercase: true, no_commas: true, no_brand_names: true}
+
+  - key: material
+    label: Material
+    kind: fact
+    type: enum
+    required: true
+    allowed: [Stainless Steel, Glass, Bamboo, Ceramic, Plastic, Silicone]
+
+  - key: colour
+    label: Colour
+    kind: fact
+    type: enum
+    required: true
+    allowed: [Black, Blue, Pink, Green, Silver, White, Clear, Natural, Multicolour]
+
+  - key: capacity_ml
+    label: Capacity (ml)
+    kind: fact
+    type: number
+    quantity: volume_ml
+    conflict_check: volume_ml
+    required: false
+    allow_na: true
+
+  - key: item_dimensions_cm
+    label: Item Dimensions L x W x H (cm)
+    kind: fact
+    type: dims
+    required: true
+    law: "LM(PC) Rules 2011 r.6(1)(f), where relevant"
+    rules: {pattern: "\\d+(\\.\\d+)? x \\d+(\\.\\d+)? x \\d+(\\.\\d+)?"}
+
+  - key: item_weight_g
+    label: Item Weight (g)
+    kind: fact
+    type: number
+    quantity: weight_g
+    conflict_check: weight_g
+    required: true
+
+  - key: net_quantity
+    label: Net Quantity
+    kind: fact
+    type: text
+    required: true
+    critical: true
+    law: "LM(PC) Rules 2011 r.6(1)(c)"
+    hint: "Exactly as the supplier states it, e.g. '1 N'."
+
+  - key: country_of_origin
+    label: Country of Origin
+    kind: fact
+    type: enum
+    required: true
+    critical: true
+    law: "LM(PC) Rules 2011 r.6(1)(aa); CP(E-Commerce) Rules 2020 r.6(5)(d)"
+    allowed: [India, China, Vietnam, Thailand, Bangladesh, Indonesia, Turkey, Germany, Italy, United States]
+
+  - key: manufacturer_details
+    label: Manufacturer Name and Address
+    kind: fact
+    type: text
+    required: true
+    critical: true
+    law: "LM(PC) Rules 2011 r.6(1)(a)"
+
+  - key: importer_details
+    label: Importer Name and Address
+    kind: fact
+    type: text
+    required_if: {field: country_of_origin, not_in: [India]}
+    allow_na: true
+    critical: true
+    law: "LM(PC) Rules 2011 r.6(1)(a), imported packages"
+
+  - key: mrp_inr
+    label: Maximum Retail Price (INR)
+    kind: fact
+    type: number
+    quantity: money_inr
+    conflict_check: money_inr
+    required: true
+    critical: true
+    law: "LM(PC) Rules 2011 r.6(1)(e)"
+
+  - key: consumer_care
+    label: Consumer Care Details
+    kind: fact
+    type: text
+    required: true
+    law: "LM(PC) Rules 2011 r.6(2)"
+
+  - key: care_instructions
+    label: Care Instructions
+    kind: fact
+    type: text
+    required: true
+
+  - key: dishwasher_safe
+    label: Dishwasher Safe
+    kind: fact
+    type: enum
+    required: false
+    allowed: ["Yes", "No"]
+    contradiction_check: true   # a line saying both "dishwasher safe" and "hand wash" needs a person
+
+  - key: hsn_code
+    label: HSN Code
+    kind: fact
+    type: code
+    required: false
+    hint: "Only if the supplier states it. Never work it out yourself."
+    rules: {pattern: "\\d{4}(\\d{2}){0,2}"}

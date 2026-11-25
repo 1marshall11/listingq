@@ -1,0 +1,334 @@
+[
+  {
+    "key": "item_name",
+    "label": "Product Name (Title)",
+    "kind": "copy",
+    "required": true,
+    "hint": "Brand + Product type + Key feature, Capacity or size, Material, Colour (brand guide).",
+    "rules": {
+      "max_chars": 150,
+      "banned_chars": [
+        "!",
+        "$",
+        "?",
+        "_",
+        "{",
+        "}",
+        "^",
+        "¬",
+        "¦"
+      ],
+      "max_word_repeats": 2,
+      "repeat_exempt_words": [
+        "a",
+        "an",
+        "the",
+        "and",
+        "or",
+        "but",
+        "for",
+        "nor",
+        "so",
+        "yet",
+        "with",
+        "of",
+        "in",
+        true,
+        "at",
+        "to",
+        "by",
+        "from",
+        "as",
+        "into",
+        "per"
+      ]
+    },
+    "col": 2
+  },
+  {
+    "key": "brand_name",
+    "label": "Brand Name",
+    "kind": "fact",
+    "type": "text",
+    "required": true,
+    "col": 3
+  },
+  {
+    "key": "generic_name",
+    "label": "Common or Generic Name",
+    "kind": "fact",
+    "type": "text",
+    "required": true,
+    "critical": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(b)",
+    "hint": "The plain product name from the supplier documents, e.g. 'Water Bottle'.",
+    "col": 4
+  },
+  {
+    "key": "bullet_point1",
+    "label": "Bullet Point 1",
+    "kind": "copy",
+    "required": true,
+    "rules": {
+      "max_chars": 200,
+      "min_chars": 40
+    },
+    "col": 5
+  },
+  {
+    "key": "bullet_point2",
+    "label": "Bullet Point 2",
+    "kind": "copy",
+    "required": true,
+    "rules": {
+      "max_chars": 200,
+      "min_chars": 40
+    },
+    "col": 6
+  },
+  {
+    "key": "bullet_point3",
+    "label": "Bullet Point 3",
+    "kind": "copy",
+    "required": true,
+    "rules": {
+      "max_chars": 200,
+      "min_chars": 40
+    },
+    "col": 7
+  },
+  {
+    "key": "bullet_point4",
+    "label": "Bullet Point 4",
+    "kind": "copy",
+    "required": false,
+    "rules": {
+      "max_chars": 200,
+      "min_chars": 40
+    },
+    "col": 8
+  },
+  {
+    "key": "bullet_point5",
+    "label": "Bullet Point 5",
+    "kind": "copy",
+    "required": false,
+    "rules": {
+      "max_chars": 200,
+      "min_chars": 40
+    },
+    "col": 9
+  },
+  {
+    "key": "product_description",
+    "label": "Product Description",
+    "kind": "copy",
+    "required": true,
+    "rules": {
+      "max_chars": 1000,
+      "min_chars": 150
+    },
+    "col": 10
+  },
+  {
+    "key": "generic_keywords",
+    "label": "Search Terms",
+    "kind": "copy",
+    "required": false,
+    "hint": "Lower case, space separated, no commas, no brand names, no claims.",
+    "rules": {
+      "max_bytes": 250,
+      "lowercase": true,
+      "no_commas": true,
+      "no_brand_names": true
+    },
+    "col": 11
+  },
+  {
+    "key": "material",
+    "label": "Material",
+    "kind": "fact",
+    "type": "enum",
+    "required": true,
+    "allowed": [
+      "Stainless Steel",
+      "Glass",
+      "Bamboo",
+      "Ceramic",
+      "Plastic",
+      "Silicone"
+    ],
+    "col": 12
+  },
+  {
+    "key": "colour",
+    "label": "Colour",
+    "kind": "fact",
+    "type": "enum",
+    "required": true,
+    "allowed": [
+      "Black",
+      "Blue",
+      "Pink",
+      "Green",
+      "Silver",
+      "White",
+      "Clear",
+      "Natural",
+      "Multicolour"
+    ],
+    "col": 13
+  },
+  {
+    "key": "capacity_ml",
+    "label": "Capacity (ml)",
+    "kind": "fact",
+    "type": "number",
+    "quantity": "volume_ml",
+    "conflict_check": "volume_ml",
+    "required": false,
+    "allow_na": true,
+    "col": 14
+  },
+  {
+    "key": "item_dimensions_cm",
+    "label": "Item Dimensions L x W x H (cm)",
+    "kind": "fact",
+    "type": "dims",
+    "required": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(f), where relevant",
+    "rules": {
+      "pattern": "\\d+(\\.\\d+)? x \\d+(\\.\\d+)? x \\d+(\\.\\d+)?"
+    },
+    "col": 15
+  },
+  {
+    "key": "item_weight_g",
+    "label": "Item Weight (g)",
+    "kind": "fact",
+    "type": "number",
+    "quantity": "weight_g",
+    "conflict_check": "weight_g",
+    "required": true,
+    "col": 16
+  },
+  {
+    "key": "net_quantity",
+    "label": "Net Quantity",
+    "kind": "fact",
+    "type": "text",
+    "required": true,
+    "critical": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(c)",
+    "hint": "Exactly as the supplier states it, e.g. '1 N'.",
+    "col": 17
+  },
+  {
+    "key": "country_of_origin",
+    "label": "Country of Origin",
+    "kind": "fact",
+    "type": "enum",
+    "required": true,
+    "critical": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(aa); CP(E-Commerce) Rules 2020 r.6(5)(d)",
+    "allowed": [
+      "India",
+      "China",
+      "Vietnam",
+      "Thailand",
+      "Bangladesh",
+      "Indonesia",
+      "Turkey",
+      "Germany",
+      "Italy",
+      "United States"
+    ],
+    "col": 18
+  },
+  {
+    "key": "manufacturer_details",
+    "label": "Manufacturer Name and Address",
+    "kind": "fact",
+    "type": "text",
+    "required": true,
+    "critical": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(a)",
+    "col": 19
+  },
+  {
+    "key": "importer_details",
+    "label": "Importer Name and Address",
+    "kind": "fact",
+    "type": "text",
+    "required_if": {
+      "field": "country_of_origin",
+      "not_in": [
+        "India"
+      ]
+    },
+    "allow_na": true,
+    "critical": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(a), imported packages",
+    "col": 20
+  },
+  {
+    "key": "mrp_inr",
+    "label": "Maximum Retail Price (INR)",
+    "kind": "fact",
+    "type": "number",
+    "quantity": "money_inr",
+    "conflict_check": "money_inr",
+    "required": true,
+    "critical": true,
+    "law": "LM(PC) Rules 2011 r.6(1)(e)",
+    "col": 21
+  },
+  {
+    "key": "consumer_care",
+    "label": "Consumer Care Details",
+    "kind": "fact",
+    "type": "text",
+    "required": true,
+    "law": "LM(PC) Rules 2011 r.6(2)",
+    "col": 22
+  },
+  {
+    "key": "care_instructions",
+    "label": "Care Instructions",
+    "kind": "fact",
+    "type": "text",
+    "required": true,
+    "col": 23
+  },
+  {
+    "key": "dishwasher_safe",
+    "label": "Dishwasher Safe",
+    "kind": "fact",
+    "type": "enum",
+    "required": false,
+    "allowed": [
+      "Yes",
+      "No"
+    ],
+    "contradiction_check": true,
+    "col": 24
+  },
+  {
+    "key": "hsn_code",
+    "label": "HSN Code",
+    "kind": "fact",
+    "type": "code",
+    "required": false,
+    "hint": "Only if the supplier states it. Never work it out yourself.",
+    "rules": {
+      "pattern": "\\d{4}(\\d{2}){0,2}"
+    },
+    "col": 25
+  },
+  {
+    "key": "main_image_url",
+    "label": "Main Image URL",
+    "kind": "unmapped",
+    "col": 26
+  }
+]
